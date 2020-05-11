@@ -7,8 +7,8 @@
 Version: SimJava 2.0
 
 Simulation date:         May 11, 2020
-Simulation start time:   11:37:50 AM IST
-Simulation end time:     11:37:51 AM IST
+Simulation start time:   4:18:45 PM IST
+Simulation end time:     4:18:46 PM IST
 
 ############################################################
 #            Overall simulation run information            #
@@ -29,19 +29,19 @@ Output analysis method:  None
 
 - Service time
 
-Sample mean:          0.5487590618685425
-Sample variance:      0.0856019598584659
-Sample std deviation: 0.29257812607655054
-Maximum:              1.0980312614701688
-Minimum:              0.09417669125832617
+Sample mean:          0.3913970442886937
+Sample variance:      0.06374292022538101
+Sample std deviation: 0.2524736030268927
+Maximum:              0.8067206973121301
+Minimum:              0.018677577143535018
 
 - Overloading status : DC1-Broker-0
 
-Sample mean:          0.5487590618685425
-Sample variance:      0.0856019598584659
-Sample std deviation: 0.29257812607655054
-Maximum:              1.0980312614701688
-Minimum:              0.09417669125832617
+Sample mean:          0.3913970442886937
+Sample variance:      0.06374292022538101
+Sample std deviation: 0.2524736030268927
+Maximum:              0.8067206973121301
+Minimum:              0.018677577143535018
 
 - Overloading status : DC1-Broker-1
 
@@ -231,19 +231,19 @@ Minimum:              0.0
 
 - UB Response time
 
-Sample mean:          301.5795369872084
-Sample variance:      440.95663513557037
-Sample std deviation: 20.998967477844484
-Maximum:              373.477760655107
-Minimum:              233.06190837034956
+Sample mean:          300.4447401883065
+Sample variance:      440.2160175430653
+Sample std deviation: 20.981325447718152
+Maximum:              372.23777606571093
+Minimum:              231.29619083716534
 
 - Hourly Response Time-0
 
-Sample mean:          301.5795369872084
-Sample variance:      440.95663513557037
-Sample std deviation: 20.998967477844484
-Maximum:              373.477760655107
-Minimum:              233.06190837034956
+Sample mean:          300.4447401883065
+Sample variance:      440.2160175430653
+Sample std deviation: 20.981325447718152
+Maximum:              372.23777606571093
+Minimum:              231.29619083716534
 
 - Hourly Response Time-1
 

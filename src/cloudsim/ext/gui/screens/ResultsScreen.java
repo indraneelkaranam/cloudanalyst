@@ -77,6 +77,8 @@ public class ResultsScreen extends JPanel implements ActionListener {
 		setResults(results);
 
 	}
+
+
 	private void initUI(){
 		mainPanel = new JPanel();
 		this.add(mainPanel, BorderLayout.CENTER);

@@ -37,18 +37,18 @@ public class HourlyEventCounter {
 			hourlyCount[timeInHrs] += countAs;
 			hourlyOccur[timeInHrs]++;
 		}
-		//printHourlyCounts();
+		printHourlyCounts();
 	}
 	
 	public void printHourlyCounts(){
-		System.out.println("*********** " + name + " *************");
-		for (int i = 0; i < 24; i++){
-			System.out.println((i+1) + "-" + hourlyCount[i]);
-		}
-		System.out.println("for each hour of "+name);
-		for (int i = 0; i < 24; i++){
-			System.out.println((i+1) + "-" + hourlyOccur[i]);
-		}
+//		System.out.println("*********** " + name + " *************");
+//		for (int i = 0; i < 24; i++){
+//			System.out.println((i+1) + "-" + hourlyCount[i]);
+//		}
+//		System.out.println("for each hour of "+name);
+//		for (int i = 0; i < 24; i++){
+//			System.out.println((i+1) + "-" + hourlyOccur[i]);
+//		}
 	}
 	
 	public long getMax(){
