@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b2e5659-8664-465c-b8c0-4d870c915da5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloudanalyst" beforeDir="false" afterPath="$PROJECT_DIR$/cloudanalyst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cloud_analyst/cloudsim/ext/gui/screens/ResultsScreen$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cloud_analyst/cloudsim/ext/gui/screens/ResultsScreen$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cloud_analyst/cloudsim/ext/gui/screens/ResultsScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cloud_analyst/cloudsim/ext/gui/screens/ResultsScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cloud_analyst/cloudsim/ext/stat/HourlyEventCounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cloud_analyst/cloudsim/ext/stat/HourlyEventCounter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sim_report" beforeDir="false" afterPath="$PROJECT_DIR$/sim_report" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cloudsim/ext/gui/screens/ResultsScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cloudsim/ext/gui/screens/ResultsScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cloudsim/ext/stat/HourlyEventCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cloudsim/ext/stat/HourlyEventCounter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
