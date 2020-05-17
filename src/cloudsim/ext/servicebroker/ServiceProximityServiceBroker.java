@@ -134,7 +134,6 @@ public class ServiceProximityServiceBroker implements CloudAppServiceBroker {
 				}
 				else
 				{
-
 					percentageSpeed.put(regionalList.get(ongo),restore);
 					ongo = (ongo+1)%listSize;
 					restore = percentageSpeed.get(regionalList.get(ongo));
