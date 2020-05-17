@@ -1273,7 +1273,7 @@ public class ConfigureSimulationPanel extends JPanel
 		@Override
 		protected void setValueAtInternal(Object value, int row, int col) {
 			MachineUIElement mc = data.get(row);
-			
+
 			switch (col){
 			case 0:
 				//Nothing to do
@@ -1302,7 +1302,7 @@ public class ConfigureSimulationPanel extends JPanel
 		public Object getValueAt(int row, int col) {
 			MachineUIElement mc = data.get(row);
 			Object value = null;
-			
+			//System.out.println("get Value at Internal "+row+" "+col);
 			switch (col){
 			case 0:
 				value = row;

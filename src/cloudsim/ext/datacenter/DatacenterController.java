@@ -185,7 +185,8 @@ public class DatacenterController extends DatacenterBroker implements GeoLocatab
 	 * @param cl
 	 */
 	private void handleResponseCloudlet(InternetCloudlet cl) {
-		
+
+		//System.out.println("invoked Handle Response Cloudlet");
 		cloudletCompletedProcessing(cl);
 
 		int parentRequest = cl.getParentId();

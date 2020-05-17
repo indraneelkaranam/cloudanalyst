@@ -68,6 +68,8 @@ public class Simulation extends BaseCloudSimObservable implements Constants {
 	private final ObservableList<DataCenterUIElement> dataCenters;
 	private List<DatacenterController> dcbs;
 	private List<DataCenter> dcs;
+	public static List<DatacenterController> dcbs1;
+	public static List<DataCenter> dcs1;
 	private final ObservableList<UserBaseUIElement> userBases;
 	private List<UserBase> ubs;
 	private double simulationTime;
@@ -79,7 +81,6 @@ public class Simulation extends BaseCloudSimObservable implements Constants {
 	private CloudSimEventListener progressListener;
 	private Map<String, Object> results;
 	private Internet internet;
-	
 	/** Constructor. */
 	public Simulation(CloudSimEventListener gui) throws Exception {
 		
@@ -97,6 +98,7 @@ public class Simulation extends BaseCloudSimObservable implements Constants {
 	/** 
 	 * Populates the initial default simulation displayed at the start.
 	 */
+
 	private void createDefaultSimulation(){
 		DataCenterUIElement dataCenter = new DataCenterUIElement(DEFAULT_DATA_CENTER_NAME,
 																 DEFAULT_DC_REGION, 
@@ -163,6 +165,8 @@ public class Simulation extends BaseCloudSimObservable implements Constants {
 		// Create Datacenters and Controllers
 		dcbs  = new ArrayList<DatacenterController>();
 		dcs =  new ArrayList<DataCenter>();
+		dcbs1  = new ArrayList<DatacenterController>();
+		dcs1 =  new ArrayList<DataCenter>();
 		for (DataCenterUIElement d : dataCenters) {
 			if (d.isAllocated()){
 				DataCenter dc = createDatacenter(d);
@@ -172,12 +176,18 @@ public class Simulation extends BaseCloudSimObservable implements Constants {
 														       d.getCostPerBw());
 				dcbs.add(controller);
 				dcs.add(dc);
-				
+				dcbs1.add(controller);
+				dcs1.add(dc);
+				//System.out.println("Adding Dc to simulation "+d.getName());
+				//System.out.println("size "+dcs.size());
 				int brokerId = controller.get_id();
 				vmlist = createVM(brokerId, d.getVmAllocation().getVmCount());
 				controller.submitVMList(vmlist);
 			}
 		}
+
+//		dcs1 = dcs;
+//		dcbs1 = dcbs;
 		
 		//Create user bases
 		ubs  = new ArrayList<UserBase>();
@@ -301,7 +311,21 @@ public class Simulation extends BaseCloudSimObservable implements Constants {
 		fireCloudSimEvent(cloudSimEvent);
 
 	}
-	
+
+	public static List<DatacenterController>  getDcbs1()
+	{
+
+		return dcbs1;
+	}
+
+	public static List<DataCenter> getDcs1() {
+
+		//for(DataCenter test: dcs1)
+			//System.out.println("name "+test.getDc_name());
+		//System.out.println("Getting Dcs1");
+		return dcs1;
+	}
+
 	private void printVmAllocations(String dcName, Map<Integer, Integer> list){
 		System.out.println("************ Vm allocations in " + dcName);
 		for (Integer vm : list.keySet()){
@@ -345,15 +369,20 @@ public class Simulation extends BaseCloudSimObservable implements Constants {
 	private DataCenter createDatacenter(DataCenterUIElement dc) {
 
 		MachineList mList = new MachineList();
-		
-		for (int mcNo = 0; mcNo < dc.getMachineList().size(); mcNo++){
+
+
+		long  overallspeed = 0;
+		for (int mcNo = 0; mcNo < dc.getMachineList().size(); mcNo++){  //no of physical h/w units in a given DC
+
+
 			MachineUIElement mc = dc.getMachineList().get(mcNo);
 			
 			PEList peList1 = new PEList();
-			for (int i = 0; i < mc.getProcessors(); i++){
+			for (int i = 0; i < mc.getProcessors(); i++){ //no of processors in each physical h/w unit(default = 4 ie quadcore)
+
 				peList1.add(new PE(i, mc.getSpeed()));
 			}
-			
+			overallspeed += mc.getProcessors()*mc.getSpeed();
 			
 			VMMAllocationPolicy vmPolicy;
 			if (mc.getVmAllocationPolicy().equals(MachineUIElement.VmAllocationPolicy.TIME_SHARED)){
@@ -376,6 +405,8 @@ public class Simulation extends BaseCloudSimObservable implements Constants {
 							  vmPolicy);
 			mList.add(h);
 		}
+
+
 		
 		double time_zone = WorldGeometry.getInstance().getTimeZone(dc.getRegion());
 		LinkedList storageList = new LinkedList(); //we are not adding SAN devices by now
@@ -388,9 +419,10 @@ public class Simulation extends BaseCloudSimObservable implements Constants {
 																			dc.getCostPerProcessor(),
 																			dc.getCostPerMem(),
 																			dc.getCostPerStorage(),
-																			dc.getCostPerBw());
+																			dc.getCostPerBw(),overallspeed);
 		DataCenter datacenter = null;
 		try {
+			//System.out.println("dc.getName() "+dc.getName());
 			datacenter = new DataCenter(dc.getName(), resConfig, new SimpleVMProvisioner(), storageList);
 		} catch (Exception e) {
 			e.printStackTrace();

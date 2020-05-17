@@ -34,6 +34,7 @@ public class Host extends Machine {
 	protected int memory;
 	protected long storage;
 	protected long bw;
+	protected long overallspeed;
 	protected MemoryProvisioner memoryProvisioner;
 	protected BWProvisioner bwProvisioner;
 	protected VMMAllocationPolicy allocationPolicy;
@@ -71,6 +72,7 @@ public class Host extends Machine {
 		bwProvisioner.init(this.bw);
 	
 		this.vmList = new LinkedList<VirtualMachine>();
+
 	}
 	
 	/**
@@ -102,7 +104,7 @@ public class Host extends Machine {
 	public long getStorage() {
 		return storage;
 	}
-	
+
 	/**
 	 * Allocates PEs and memory to a new VM in the Host
 	 * @param vm VirtualMachine being started

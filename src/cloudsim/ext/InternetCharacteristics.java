@@ -26,6 +26,7 @@ import cloudsim.ext.util.IOUtil;
  */
 public class InternetCharacteristics {
 
+	static int use = 0;
 	private static final int STANDARD_POISSON_MEAN = 100;
 
 	private static InternetCharacteristics instance = null;
@@ -112,6 +113,9 @@ public class InternetCharacteristics {
 	 * Updates the service latency staticistics for a data center.
 	 */
 	public void updateSerivceLatency(String serviceProvider, Double delay){
+
+		use++; //cloudlet number of times, literally response time of each cloudlet
+		//System.out.println("Service latency Updation "+serviceProvider+" "+delay+" "+use);
 		serviceLatencies.put(serviceProvider, new Double[]{delay, GridSim.clock()});
 	}
 
@@ -158,7 +162,7 @@ public class InternetCharacteristics {
 		double avgPerUserBw;
 		if (trafficLevels.containsKey(commPath)){
 			long currentTraffic = trafficLevels.get(commPath);
-			avgPerUserBw = availableBw / currentTraffic;
+			avgPerUserBw = availableBw / currentTraffic; //current traffic = current no of requests in transmission
 		} else {
 			avgPerUserBw = availableBw;
 		}
@@ -209,7 +213,8 @@ public class InternetCharacteristics {
 			Collections.sort(delays);
 
 			proximityList = new LinkedList<Integer>();
-			for (DelayEntry e : delays){
+			for (DelayEntry e : delays){    //delays.size() = 6(all region sorted by latency)
+				//System.out.println("Destination Region "+e.getDestRegion());
 				proximityList.add(e.getDestRegion());
 			}
 
@@ -234,6 +239,8 @@ public class InternetCharacteristics {
 	}
 
 	public CommPath addTraffic(String src, String dest, long requestCount){
+
+		//System.out.println("request count of Each cloudet"+requestCount);
 		int srcRegion = entityLocations.get(src);
 		int destRegion = entityLocations.get(dest);
 
