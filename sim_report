@@ -6,17 +6,17 @@
 
 Version: SimJava 2.0
 
-Simulation date:         May 16, 2020
-Simulation start time:   9:02:01 PM IST
-Simulation end time:     9:02:02 PM IST
+Simulation date:         May 17, 2020
+Simulation start time:   7:10:19 PM IST
+Simulation end time:     7:10:23 PM IST
 
 ############################################################
 #            Overall simulation run information            #
 ############################################################
 
-Total simulated time:    3650500.0
+Total simulated time:    3613300.0
 Total transient time:    0.0
-Total steady state time: 3650500.0
+Total steady state time: 3613300.0
 Transient condition:     None
 Termination condition:   3600000.0 units of elapsed simulated time
 Output analysis method:  None
@@ -29,19 +29,19 @@ Output analysis method:  None
 
 - Service time
 
-Sample mean:          0.3862211992117172
-Sample variance:      0.07624040788825283
-Sample std deviation: 0.27611665630355015
-Maximum:              0.8084098622202873
-Minimum:              6.305284332484007E-4
+Sample mean:          0.4152726808200683
+Sample variance:      0.07762858114170358
+Sample std deviation: 0.27861906098058614
+Maximum:              0.8230800358578563
+Minimum:              0.0014768371474929154
 
 - Overloading status : DC1-Broker-0
 
-Sample mean:          0.3862211992117172
-Sample variance:      0.07624040788825283
-Sample std deviation: 0.27611665630355015
-Maximum:              0.8084098622202873
-Minimum:              6.305284332484007E-4
+Sample mean:          0.4152726808200683
+Sample variance:      0.07762858114170358
+Sample std deviation: 0.27861906098058614
+Maximum:              0.8230800358578563
+Minimum:              0.0014768371474929154
 
 - Overloading status : DC1-Broker-1
 
@@ -231,19 +231,19 @@ Minimum:              0.0
 
 - Service time
 
-Sample mean:          0.36270694784898294
-Sample variance:      0.05873541425913113
-Sample std deviation: 0.24235390291705874
-Maximum:              0.7861792949552182
-Minimum:              0.011525878682732582
+Sample mean:          0.39676153778890033
+Sample variance:      0.07886354095910365
+Sample std deviation: 0.28082653179338957
+Maximum:              0.8112596408464015
+Minimum:              0.001449846662580967
 
 - Overloading status : DC2-Broker-0
 
-Sample mean:          0.36270694784898294
-Sample variance:      0.05873541425913113
-Sample std deviation: 0.24235390291705874
-Maximum:              0.7861792949552182
-Minimum:              0.011525878682732582
+Sample mean:          0.39676153778890033
+Sample variance:      0.07886354095910365
+Sample std deviation: 0.28082653179338957
+Maximum:              0.8112596408464015
+Minimum:              0.001449846662580967
 
 - Overloading status : DC2-Broker-1
 
@@ -433,19 +433,19 @@ Minimum:              0.0
 
 - Service time
 
-Sample mean:          0.49321809586074494
-Sample variance:      0.0789495709920142
-Sample std deviation: 0.28097966295092286
-Maximum:              0.8089788290672004
-Minimum:              0.015974826645106077
+Sample mean:          0.5209110679019945
+Sample variance:      0.07910341163723979
+Sample std deviation: 0.2812532873358813
+Maximum:              0.9327814439311624
+Minimum:              0.12546294881030917
 
 - Overloading status : DC3-Broker-0
 
-Sample mean:          0.49321809586074494
-Sample variance:      0.0789495709920142
-Sample std deviation: 0.28097966295092286
-Maximum:              0.8089788290672004
-Minimum:              0.015974826645106077
+Sample mean:          0.5209110679019945
+Sample variance:      0.07910341163723979
+Sample std deviation: 0.2812532873358813
+Maximum:              0.9327814439311624
+Minimum:              0.12546294881030917
 
 - Overloading status : DC3-Broker-1
 
@@ -635,19 +635,19 @@ Minimum:              0.0
 
 - Service time
 
-Sample mean:          0.4130333746077076
-Sample variance:      0.07651819337574975
-Sample std deviation: 0.2766192209080015
-Maximum:              0.7943322753999382
-Minimum:              0.0103467907756567
+Sample mean:          0.5197553891626969
+Sample variance:      0.08312197144943127
+Sample std deviation: 0.2883088126461473
+Maximum:              0.9394737565889955
+Minimum:              0.07890552328899503
 
 - Overloading status : DC4-Broker-0
 
-Sample mean:          0.4130333746077076
-Sample variance:      0.07651819337574975
-Sample std deviation: 0.2766192209080015
-Maximum:              0.7943322753999382
-Minimum:              0.0103467907756567
+Sample mean:          0.5197553891626969
+Sample variance:      0.08312197144943127
+Sample std deviation: 0.2883088126461473
+Maximum:              0.9394737565889955
+Minimum:              0.07890552328899503
 
 - Overloading status : DC4-Broker-1
 
@@ -837,19 +837,19 @@ Minimum:              0.0
 
 - Service time
 
-Sample mean:          0.3084943680548915
-Sample variance:      0.07534174227732549
-Sample std deviation: 0.2744845027999313
-Maximum:              0.7927930115816935
-Minimum:              0.004512007348239422
+Sample mean:          0.5254820149808804
+Sample variance:      0.07945839817670082
+Sample std deviation: 0.28188366071253723
+Maximum:              0.944358132313937
+Minimum:              0.029522579279728234
 
 - Overloading status : DC5-Broker-0
 
-Sample mean:          0.3084943680548915
-Sample variance:      0.07534174227732549
-Sample std deviation: 0.2744845027999313
-Maximum:              0.7927930115816935
-Minimum:              0.004512007348239422
+Sample mean:          0.5254820149808804
+Sample variance:      0.07945839817670082
+Sample std deviation: 0.28188366071253723
+Maximum:              0.944358132313937
+Minimum:              0.029522579279728234
 
 - Overloading status : DC5-Broker-1
 
@@ -1035,23 +1035,6083 @@ Sample std deviation: 0.0
 Maximum:              0.0
 Minimum:              0.0
 
+------------------------ DC6-Broker ------------------------
+
+- Service time
+
+Sample mean:          0.40820831406370167
+Sample variance:      0.0729326086557307
+Sample std deviation: 0.27006037964820145
+Maximum:              0.8788120218086988
+Minimum:              0.001969181466847658
+
+- Overloading status : DC6-Broker-0
+
+Sample mean:          0.40820831406370167
+Sample variance:      0.0729326086557307
+Sample std deviation: 0.27006037964820145
+Maximum:              0.8788120218086988
+Minimum:              0.001969181466847658
+
+- Overloading status : DC6-Broker-1
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC6-Broker-2
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC6-Broker-3
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC6-Broker-4
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC6-Broker-5
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC6-Broker-6
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC6-Broker-7
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC6-Broker-8
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC6-Broker-9
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC6-Broker-10
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC6-Broker-11
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC6-Broker-12
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC6-Broker-13
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC6-Broker-14
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC6-Broker-15
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC6-Broker-16
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC6-Broker-17
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC6-Broker-18
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC6-Broker-19
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC6-Broker-20
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC6-Broker-21
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC6-Broker-22
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC6-Broker-23
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+------------------------ DC7-Broker ------------------------
+
+- Service time
+
+Sample mean:          0.4349345240629527
+Sample variance:      0.08005786007568591
+Sample std deviation: 0.282944977116905
+Maximum:              0.898337324266322
+Minimum:              0.0021246159449219704
+
+- Overloading status : DC7-Broker-0
+
+Sample mean:          0.4349345240629527
+Sample variance:      0.08005786007568591
+Sample std deviation: 0.282944977116905
+Maximum:              0.898337324266322
+Minimum:              0.0021246159449219704
+
+- Overloading status : DC7-Broker-1
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC7-Broker-2
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC7-Broker-3
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC7-Broker-4
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC7-Broker-5
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC7-Broker-6
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC7-Broker-7
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC7-Broker-8
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC7-Broker-9
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC7-Broker-10
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC7-Broker-11
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC7-Broker-12
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC7-Broker-13
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC7-Broker-14
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC7-Broker-15
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC7-Broker-16
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC7-Broker-17
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC7-Broker-18
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC7-Broker-19
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC7-Broker-20
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC7-Broker-21
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC7-Broker-22
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC7-Broker-23
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+------------------------ DC8-Broker ------------------------
+
+- Service time
+
+Sample mean:          0.5274313843813996
+Sample variance:      0.07899084169054107
+Sample std deviation: 0.2810530940775089
+Maximum:              1.0123498336179182
+Minimum:              0.0471404034178704
+
+- Overloading status : DC8-Broker-0
+
+Sample mean:          0.5274313843813996
+Sample variance:      0.07899084169054107
+Sample std deviation: 0.2810530940775089
+Maximum:              1.0123498336179182
+Minimum:              0.0471404034178704
+
+- Overloading status : DC8-Broker-1
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC8-Broker-2
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC8-Broker-3
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC8-Broker-4
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC8-Broker-5
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC8-Broker-6
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC8-Broker-7
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC8-Broker-8
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC8-Broker-9
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC8-Broker-10
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC8-Broker-11
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC8-Broker-12
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC8-Broker-13
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC8-Broker-14
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC8-Broker-15
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC8-Broker-16
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC8-Broker-17
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC8-Broker-18
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC8-Broker-19
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC8-Broker-20
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC8-Broker-21
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC8-Broker-22
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC8-Broker-23
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+------------------------ DC9-Broker ------------------------
+
+- Service time
+
+Sample mean:          0.5359673275866311
+Sample variance:      0.07724461928491444
+Sample std deviation: 0.2779291623506149
+Maximum:              1.0140775045147166
+Minimum:              0.1261246157810092
+
+- Overloading status : DC9-Broker-0
+
+Sample mean:          0.5359673275866311
+Sample variance:      0.07724461928491444
+Sample std deviation: 0.2779291623506149
+Maximum:              1.0140775045147166
+Minimum:              0.1261246157810092
+
+- Overloading status : DC9-Broker-1
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC9-Broker-2
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC9-Broker-3
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC9-Broker-4
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC9-Broker-5
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC9-Broker-6
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC9-Broker-7
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC9-Broker-8
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC9-Broker-9
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC9-Broker-10
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC9-Broker-11
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC9-Broker-12
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC9-Broker-13
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC9-Broker-14
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC9-Broker-15
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC9-Broker-16
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC9-Broker-17
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC9-Broker-18
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC9-Broker-19
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC9-Broker-20
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC9-Broker-21
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC9-Broker-22
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC9-Broker-23
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+----------------------- DC10-Broker ------------------------
+
+- Service time
+
+Sample mean:          0.5443149606556644
+Sample variance:      0.07974912921544894
+Sample std deviation: 0.2823988831696205
+Maximum:              1.0074547661934048
+Minimum:              0.1263099922798574
+
+- Overloading status : DC10-Broker-0
+
+Sample mean:          0.5443149606556644
+Sample variance:      0.07974912921544894
+Sample std deviation: 0.2823988831696205
+Maximum:              1.0074547661934048
+Minimum:              0.1263099922798574
+
+- Overloading status : DC10-Broker-1
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC10-Broker-2
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC10-Broker-3
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC10-Broker-4
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC10-Broker-5
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC10-Broker-6
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC10-Broker-7
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC10-Broker-8
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC10-Broker-9
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC10-Broker-10
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC10-Broker-11
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC10-Broker-12
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC10-Broker-13
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC10-Broker-14
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC10-Broker-15
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC10-Broker-16
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC10-Broker-17
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC10-Broker-18
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC10-Broker-19
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC10-Broker-20
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC10-Broker-21
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC10-Broker-22
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC10-Broker-23
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+----------------------- DC11-Broker ------------------------
+
+- Service time
+
+Sample mean:          0.38448081701978304
+Sample variance:      0.07903873850151169
+Sample std deviation: 0.28113829070674756
+Maximum:              0.795015737763606
+Minimum:              0.0013260424602776766
+
+- Overloading status : DC11-Broker-0
+
+Sample mean:          0.38448081701978304
+Sample variance:      0.07903873850151169
+Sample std deviation: 0.28113829070674756
+Maximum:              0.795015737763606
+Minimum:              0.0013260424602776766
+
+- Overloading status : DC11-Broker-1
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC11-Broker-2
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC11-Broker-3
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC11-Broker-4
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC11-Broker-5
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC11-Broker-6
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC11-Broker-7
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC11-Broker-8
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC11-Broker-9
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC11-Broker-10
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC11-Broker-11
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC11-Broker-12
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC11-Broker-13
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC11-Broker-14
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC11-Broker-15
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC11-Broker-16
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC11-Broker-17
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC11-Broker-18
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC11-Broker-19
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC11-Broker-20
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC11-Broker-21
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC11-Broker-22
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC11-Broker-23
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+----------------------- DC12-Broker ------------------------
+
+- Service time
+
+Sample mean:          0.39965899014967976
+Sample variance:      0.07542034461019892
+Sample std deviation: 0.27462764720653843
+Maximum:              0.8004653053358197
+Minimum:              0.0013633044436573982
+
+- Overloading status : DC12-Broker-0
+
+Sample mean:          0.39965899014967976
+Sample variance:      0.07542034461019892
+Sample std deviation: 0.27462764720653843
+Maximum:              0.8004653053358197
+Minimum:              0.0013633044436573982
+
+- Overloading status : DC12-Broker-1
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC12-Broker-2
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC12-Broker-3
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC12-Broker-4
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC12-Broker-5
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC12-Broker-6
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC12-Broker-7
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC12-Broker-8
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC12-Broker-9
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC12-Broker-10
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC12-Broker-11
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC12-Broker-12
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC12-Broker-13
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC12-Broker-14
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC12-Broker-15
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC12-Broker-16
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC12-Broker-17
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC12-Broker-18
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC12-Broker-19
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC12-Broker-20
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC12-Broker-21
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC12-Broker-22
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC12-Broker-23
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+----------------------- DC13-Broker ------------------------
+
+- Service time
+
+Sample mean:          0.49005842244017
+Sample variance:      0.0807279365989699
+Sample std deviation: 0.2841266207150782
+Maximum:              0.9206105107441545
+Minimum:              0.06641687685623765
+
+- Overloading status : DC13-Broker-0
+
+Sample mean:          0.49005842244017
+Sample variance:      0.0807279365989699
+Sample std deviation: 0.2841266207150782
+Maximum:              0.9206105107441545
+Minimum:              0.06641687685623765
+
+- Overloading status : DC13-Broker-1
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC13-Broker-2
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC13-Broker-3
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC13-Broker-4
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC13-Broker-5
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC13-Broker-6
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC13-Broker-7
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC13-Broker-8
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC13-Broker-9
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC13-Broker-10
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC13-Broker-11
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC13-Broker-12
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC13-Broker-13
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC13-Broker-14
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC13-Broker-15
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC13-Broker-16
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC13-Broker-17
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC13-Broker-18
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC13-Broker-19
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC13-Broker-20
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC13-Broker-21
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC13-Broker-22
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC13-Broker-23
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+----------------------- DC14-Broker ------------------------
+
+- Service time
+
+Sample mean:          0.5046638466257166
+Sample variance:      0.07843464770720637
+Sample std deviation: 0.2800618640715054
+Maximum:              0.9192693263757974
+Minimum:              0.1253814697265625
+
+- Overloading status : DC14-Broker-0
+
+Sample mean:          0.5046638466257166
+Sample variance:      0.07843464770720637
+Sample std deviation: 0.2800618640715054
+Maximum:              0.9192693263757974
+Minimum:              0.1253814697265625
+
+- Overloading status : DC14-Broker-1
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC14-Broker-2
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC14-Broker-3
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC14-Broker-4
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC14-Broker-5
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC14-Broker-6
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC14-Broker-7
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC14-Broker-8
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC14-Broker-9
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC14-Broker-10
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC14-Broker-11
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC14-Broker-12
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC14-Broker-13
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC14-Broker-14
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC14-Broker-15
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC14-Broker-16
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC14-Broker-17
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC14-Broker-18
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC14-Broker-19
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC14-Broker-20
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC14-Broker-21
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC14-Broker-22
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC14-Broker-23
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+----------------------- DC15-Broker ------------------------
+
+- Service time
+
+Sample mean:          0.501722747168613
+Sample variance:      0.07834218546892502
+Sample std deviation: 0.2798967407257988
+Maximum:              0.9163258869666606
+Minimum:              0.029033932776656002
+
+- Overloading status : DC15-Broker-0
+
+Sample mean:          0.501722747168613
+Sample variance:      0.07834218546892502
+Sample std deviation: 0.2798967407257988
+Maximum:              0.9163258869666606
+Minimum:              0.029033932776656002
+
+- Overloading status : DC15-Broker-1
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC15-Broker-2
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC15-Broker-3
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC15-Broker-4
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC15-Broker-5
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC15-Broker-6
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC15-Broker-7
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC15-Broker-8
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC15-Broker-9
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC15-Broker-10
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC15-Broker-11
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC15-Broker-12
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC15-Broker-13
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC15-Broker-14
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC15-Broker-15
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC15-Broker-16
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC15-Broker-17
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC15-Broker-18
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC15-Broker-19
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC15-Broker-20
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC15-Broker-21
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC15-Broker-22
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC15-Broker-23
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+----------------------- DC16-Broker ------------------------
+
+- Service time
+
+Sample mean:          0.43108734772539087
+Sample variance:      0.07391584632809678
+Sample std deviation: 0.2718746886491951
+Maximum:              0.8310086317942478
+Minimum:              0.0016910682898014784
+
+- Overloading status : DC16-Broker-0
+
+Sample mean:          0.43108734772539087
+Sample variance:      0.07391584632809678
+Sample std deviation: 0.2718746886491951
+Maximum:              0.8310086317942478
+Minimum:              0.0016910682898014784
+
+- Overloading status : DC16-Broker-1
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC16-Broker-2
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC16-Broker-3
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC16-Broker-4
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC16-Broker-5
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC16-Broker-6
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC16-Broker-7
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC16-Broker-8
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC16-Broker-9
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC16-Broker-10
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC16-Broker-11
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC16-Broker-12
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC16-Broker-13
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC16-Broker-14
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC16-Broker-15
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC16-Broker-16
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC16-Broker-17
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC16-Broker-18
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC16-Broker-19
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC16-Broker-20
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC16-Broker-21
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC16-Broker-22
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC16-Broker-23
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+----------------------- DC17-Broker ------------------------
+
+- Service time
+
+Sample mean:          0.41106186004169687
+Sample variance:      0.07822541840087957
+Sample std deviation: 0.2796880733976327
+Maximum:              0.8236609003506601
+Minimum:              0.0016055074520409107
+
+- Overloading status : DC17-Broker-0
+
+Sample mean:          0.41106186004169687
+Sample variance:      0.07822541840087957
+Sample std deviation: 0.2796880733976327
+Maximum:              0.8236609003506601
+Minimum:              0.0016055074520409107
+
+- Overloading status : DC17-Broker-1
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC17-Broker-2
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC17-Broker-3
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC17-Broker-4
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC17-Broker-5
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC17-Broker-6
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC17-Broker-7
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC17-Broker-8
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC17-Broker-9
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC17-Broker-10
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC17-Broker-11
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC17-Broker-12
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC17-Broker-13
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC17-Broker-14
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC17-Broker-15
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC17-Broker-16
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC17-Broker-17
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC17-Broker-18
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC17-Broker-19
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC17-Broker-20
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC17-Broker-21
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC17-Broker-22
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC17-Broker-23
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+----------------------- DC18-Broker ------------------------
+
+- Service time
+
+Sample mean:          0.5063987151379825
+Sample variance:      0.08540565862977051
+Sample std deviation: 0.29224246547989996
+Maximum:              0.942150101531297
+Minimum:              0.018403697991743684
+
+- Overloading status : DC18-Broker-0
+
+Sample mean:          0.5063987151379825
+Sample variance:      0.08540565862977051
+Sample std deviation: 0.29224246547989996
+Maximum:              0.942150101531297
+Minimum:              0.018403697991743684
+
+- Overloading status : DC18-Broker-1
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC18-Broker-2
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC18-Broker-3
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC18-Broker-4
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC18-Broker-5
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC18-Broker-6
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC18-Broker-7
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC18-Broker-8
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC18-Broker-9
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC18-Broker-10
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC18-Broker-11
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC18-Broker-12
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC18-Broker-13
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC18-Broker-14
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC18-Broker-15
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC18-Broker-16
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC18-Broker-17
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC18-Broker-18
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC18-Broker-19
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC18-Broker-20
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC18-Broker-21
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC18-Broker-22
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC18-Broker-23
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+----------------------- DC19-Broker ------------------------
+
+- Service time
+
+Sample mean:          0.5048839682670543
+Sample variance:      0.08697467128393453
+Sample std deviation: 0.2949146847546499
+Maximum:              0.9505875199101865
+Minimum:              0.09406073810532689
+
+- Overloading status : DC19-Broker-0
+
+Sample mean:          0.5048839682670543
+Sample variance:      0.08697467128393453
+Sample std deviation: 0.2949146847546499
+Maximum:              0.9505875199101865
+Minimum:              0.09406073810532689
+
+- Overloading status : DC19-Broker-1
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC19-Broker-2
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC19-Broker-3
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC19-Broker-4
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC19-Broker-5
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC19-Broker-6
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC19-Broker-7
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC19-Broker-8
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC19-Broker-9
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC19-Broker-10
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC19-Broker-11
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC19-Broker-12
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC19-Broker-13
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC19-Broker-14
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC19-Broker-15
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC19-Broker-16
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC19-Broker-17
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC19-Broker-18
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC19-Broker-19
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC19-Broker-20
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC19-Broker-21
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC19-Broker-22
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC19-Broker-23
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+----------------------- DC20-Broker ------------------------
+
+- Service time
+
+Sample mean:          0.49676156883321576
+Sample variance:      0.07813849254917941
+Sample std deviation: 0.27953263235117903
+Maximum:              0.9511542128166184
+Minimum:              0.0687389908125624
+
+- Overloading status : DC20-Broker-0
+
+Sample mean:          0.49676156883321576
+Sample variance:      0.07813849254917941
+Sample std deviation: 0.27953263235117903
+Maximum:              0.9511542128166184
+Minimum:              0.0687389908125624
+
+- Overloading status : DC20-Broker-1
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC20-Broker-2
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC20-Broker-3
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC20-Broker-4
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC20-Broker-5
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC20-Broker-6
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC20-Broker-7
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC20-Broker-8
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC20-Broker-9
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC20-Broker-10
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC20-Broker-11
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC20-Broker-12
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC20-Broker-13
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC20-Broker-14
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC20-Broker-15
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC20-Broker-16
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC20-Broker-17
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC20-Broker-18
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC20-Broker-19
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC20-Broker-20
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC20-Broker-21
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC20-Broker-22
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC20-Broker-23
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+----------------------- DC21-Broker ------------------------
+
+- Service time
+
+Sample mean:          0.4428044277778549
+Sample variance:      0.07957125722775175
+Sample std deviation: 0.28208377696661635
+Maximum:              0.9698431589640677
+Minimum:              0.0027498609852045774
+
+- Overloading status : DC21-Broker-0
+
+Sample mean:          0.4428044277778549
+Sample variance:      0.07957125722775175
+Sample std deviation: 0.28208377696661635
+Maximum:              0.9698431589640677
+Minimum:              0.0027498609852045774
+
+- Overloading status : DC21-Broker-1
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC21-Broker-2
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC21-Broker-3
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC21-Broker-4
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC21-Broker-5
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC21-Broker-6
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC21-Broker-7
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC21-Broker-8
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC21-Broker-9
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC21-Broker-10
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC21-Broker-11
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC21-Broker-12
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC21-Broker-13
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC21-Broker-14
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC21-Broker-15
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC21-Broker-16
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC21-Broker-17
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC21-Broker-18
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC21-Broker-19
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC21-Broker-20
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC21-Broker-21
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC21-Broker-22
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC21-Broker-23
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+----------------------- DC22-Broker ------------------------
+
+- Service time
+
+Sample mean:          0.47111130481395
+Sample variance:      0.08296825553737519
+Sample std deviation: 0.2880421072297854
+Maximum:              0.9735240071614584
+Minimum:              0.004598770989105105
+
+- Overloading status : DC22-Broker-0
+
+Sample mean:          0.47111130481395
+Sample variance:      0.08296825553737519
+Sample std deviation: 0.2880421072297854
+Maximum:              0.9735240071614584
+Minimum:              0.004598770989105105
+
+- Overloading status : DC22-Broker-1
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC22-Broker-2
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC22-Broker-3
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC22-Broker-4
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC22-Broker-5
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC22-Broker-6
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC22-Broker-7
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC22-Broker-8
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC22-Broker-9
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC22-Broker-10
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC22-Broker-11
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC22-Broker-12
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC22-Broker-13
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC22-Broker-14
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC22-Broker-15
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC22-Broker-16
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC22-Broker-17
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC22-Broker-18
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC22-Broker-19
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC22-Broker-20
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC22-Broker-21
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC22-Broker-22
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC22-Broker-23
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+----------------------- DC23-Broker ------------------------
+
+- Service time
+
+Sample mean:          0.5848377466868622
+Sample variance:      0.08053948748334751
+Sample std deviation: 0.28379479819642134
+Maximum:              1.1202305385377258
+Minimum:              0.07003679370973259
+
+- Overloading status : DC23-Broker-0
+
+Sample mean:          0.5848377466868622
+Sample variance:      0.08053948748334751
+Sample std deviation: 0.28379479819642134
+Maximum:              1.1202305385377258
+Minimum:              0.07003679370973259
+
+- Overloading status : DC23-Broker-1
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC23-Broker-2
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC23-Broker-3
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC23-Broker-4
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC23-Broker-5
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC23-Broker-6
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC23-Broker-7
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC23-Broker-8
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC23-Broker-9
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC23-Broker-10
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC23-Broker-11
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC23-Broker-12
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC23-Broker-13
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC23-Broker-14
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC23-Broker-15
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC23-Broker-16
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC23-Broker-17
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC23-Broker-18
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC23-Broker-19
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC23-Broker-20
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC23-Broker-21
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC23-Broker-22
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC23-Broker-23
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+----------------------- DC24-Broker ------------------------
+
+- Service time
+
+Sample mean:          0.5628673094353004
+Sample variance:      0.08130984322895471
+Sample std deviation: 0.2851488089208067
+Maximum:              1.1208871128037572
+Minimum:              0.09607166098430753
+
+- Overloading status : DC24-Broker-0
+
+Sample mean:          0.5628673094353004
+Sample variance:      0.08130984322895471
+Sample std deviation: 0.2851488089208067
+Maximum:              1.1208871128037572
+Minimum:              0.09607166098430753
+
+- Overloading status : DC24-Broker-1
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC24-Broker-2
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC24-Broker-3
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC24-Broker-4
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC24-Broker-5
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC24-Broker-6
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC24-Broker-7
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC24-Broker-8
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC24-Broker-9
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC24-Broker-10
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC24-Broker-11
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC24-Broker-12
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC24-Broker-13
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC24-Broker-14
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC24-Broker-15
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC24-Broker-16
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC24-Broker-17
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC24-Broker-18
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC24-Broker-19
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC24-Broker-20
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC24-Broker-21
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC24-Broker-22
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC24-Broker-23
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+----------------------- DC25-Broker ------------------------
+
+- Service time
+
+Sample mean:          0.5701084538737444
+Sample variance:      0.08141000393620362
+Sample std deviation: 0.2853243837042387
+Maximum:              1.11151123046875
+Minimum:              0.07131742592900991
+
+- Overloading status : DC25-Broker-0
+
+Sample mean:          0.5701084538737444
+Sample variance:      0.08141000393620362
+Sample std deviation: 0.2853243837042387
+Maximum:              1.11151123046875
+Minimum:              0.07131742592900991
+
+- Overloading status : DC25-Broker-1
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC25-Broker-2
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC25-Broker-3
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC25-Broker-4
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC25-Broker-5
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC25-Broker-6
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC25-Broker-7
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC25-Broker-8
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC25-Broker-9
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC25-Broker-10
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC25-Broker-11
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC25-Broker-12
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC25-Broker-13
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC25-Broker-14
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC25-Broker-15
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC25-Broker-16
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC25-Broker-17
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC25-Broker-18
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC25-Broker-19
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC25-Broker-20
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC25-Broker-21
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC25-Broker-22
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC25-Broker-23
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+----------------------- DC26-Broker ------------------------
+
+- Service time
+
+Sample mean:          0.3929464320371131
+Sample variance:      0.07536300912940659
+Sample std deviation: 0.27452323968911374
+Maximum:              0.8047069220291974
+Minimum:              0.001433488301699981
+
+- Overloading status : DC26-Broker-0
+
+Sample mean:          0.3929464320371131
+Sample variance:      0.07536300912940659
+Sample std deviation: 0.27452323968911374
+Maximum:              0.8047069220291974
+Minimum:              0.001433488301699981
+
+- Overloading status : DC26-Broker-1
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC26-Broker-2
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC26-Broker-3
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC26-Broker-4
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC26-Broker-5
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC26-Broker-6
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC26-Broker-7
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC26-Broker-8
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC26-Broker-9
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC26-Broker-10
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC26-Broker-11
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC26-Broker-12
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC26-Broker-13
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC26-Broker-14
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC26-Broker-15
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC26-Broker-16
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC26-Broker-17
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC26-Broker-18
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC26-Broker-19
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC26-Broker-20
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC26-Broker-21
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC26-Broker-22
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC26-Broker-23
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+----------------------- DC27-Broker ------------------------
+
+- Service time
+
+Sample mean:          0.3840408600243483
+Sample variance:      0.07264166838287785
+Sample std deviation: 0.26952118355127086
+Maximum:              0.8029088554903865
+Minimum:              0.001501933904364705
+
+- Overloading status : DC27-Broker-0
+
+Sample mean:          0.3840408600243483
+Sample variance:      0.07264166838287785
+Sample std deviation: 0.26952118355127086
+Maximum:              0.8029088554903865
+Minimum:              0.001501933904364705
+
+- Overloading status : DC27-Broker-1
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC27-Broker-2
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC27-Broker-3
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC27-Broker-4
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC27-Broker-5
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC27-Broker-6
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC27-Broker-7
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC27-Broker-8
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC27-Broker-9
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC27-Broker-10
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC27-Broker-11
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC27-Broker-12
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC27-Broker-13
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC27-Broker-14
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC27-Broker-15
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC27-Broker-16
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC27-Broker-17
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC27-Broker-18
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC27-Broker-19
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC27-Broker-20
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC27-Broker-21
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC27-Broker-22
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC27-Broker-23
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+----------------------- DC28-Broker ------------------------
+
+- Service time
+
+Sample mean:          0.5314695408768831
+Sample variance:      0.07818605299097768
+Sample std deviation: 0.27961769076898135
+Maximum:              0.9262346308678389
+Minimum:              0.03218199172988534
+
+- Overloading status : DC28-Broker-0
+
+Sample mean:          0.5314695408768831
+Sample variance:      0.07818605299097768
+Sample std deviation: 0.27961769076898135
+Maximum:              0.9262346308678389
+Minimum:              0.03218199172988534
+
+- Overloading status : DC28-Broker-1
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC28-Broker-2
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC28-Broker-3
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC28-Broker-4
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC28-Broker-5
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC28-Broker-6
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC28-Broker-7
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC28-Broker-8
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC28-Broker-9
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC28-Broker-10
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC28-Broker-11
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC28-Broker-12
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC28-Broker-13
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC28-Broker-14
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC28-Broker-15
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC28-Broker-16
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC28-Broker-17
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC28-Broker-18
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC28-Broker-19
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC28-Broker-20
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC28-Broker-21
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC28-Broker-22
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC28-Broker-23
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+----------------------- DC29-Broker ------------------------
+
+- Service time
+
+Sample mean:          0.5303785513012956
+Sample variance:      0.07891043293480983
+Sample std deviation: 0.2809100086056206
+Maximum:              0.9471699483692646
+Minimum:              0.04142441228032112
+
+- Overloading status : DC29-Broker-0
+
+Sample mean:          0.5303785513012956
+Sample variance:      0.07891043293480983
+Sample std deviation: 0.2809100086056206
+Maximum:              0.9471699483692646
+Minimum:              0.04142441228032112
+
+- Overloading status : DC29-Broker-1
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC29-Broker-2
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC29-Broker-3
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC29-Broker-4
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC29-Broker-5
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC29-Broker-6
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC29-Broker-7
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC29-Broker-8
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC29-Broker-9
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC29-Broker-10
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC29-Broker-11
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC29-Broker-12
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC29-Broker-13
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC29-Broker-14
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC29-Broker-15
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC29-Broker-16
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC29-Broker-17
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC29-Broker-18
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC29-Broker-19
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC29-Broker-20
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC29-Broker-21
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC29-Broker-22
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC29-Broker-23
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+----------------------- DC30-Broker ------------------------
+
+- Service time
+
+Sample mean:          0.5174239162048765
+Sample variance:      0.0804661657122487
+Sample std deviation: 0.2836655878182066
+Maximum:              0.9313534824177623
+Minimum:              0.08026791550219059
+
+- Overloading status : DC30-Broker-0
+
+Sample mean:          0.5174239162048765
+Sample variance:      0.0804661657122487
+Sample std deviation: 0.2836655878182066
+Maximum:              0.9313534824177623
+Minimum:              0.08026791550219059
+
+- Overloading status : DC30-Broker-1
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC30-Broker-2
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC30-Broker-3
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC30-Broker-4
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC30-Broker-5
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC30-Broker-6
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC30-Broker-7
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC30-Broker-8
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC30-Broker-9
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC30-Broker-10
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC30-Broker-11
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC30-Broker-12
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC30-Broker-13
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC30-Broker-14
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC30-Broker-15
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC30-Broker-16
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC30-Broker-17
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC30-Broker-18
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC30-Broker-19
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC30-Broker-20
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC30-Broker-21
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC30-Broker-22
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Overloading status : DC30-Broker-23
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
 --------------------------- UB1 ----------------------------
 
 - UB Response time
 
-Sample mean:          50.08788818035245
-Sample variance:      12.230957856723013
-Sample std deviation: 3.4972786358428767
-Maximum:              62.055610426235944
-Minimum:              38.57897633477114
+Sample mean:          50.154947854091056
+Sample variance:      12.858818719365006
+Sample std deviation: 3.585919508210552
+Maximum:              62.88179899682291
+Minimum:              37.534511466510594
 
 - Hourly Response Time-0
 
-Sample mean:          50.08788818035245
-Sample variance:      12.230957856723013
-Sample std deviation: 3.4972786358428767
-Maximum:              62.055610426235944
-Minimum:              38.57897633477114
+Sample mean:          50.154947854091056
+Sample variance:      12.858818719365006
+Sample std deviation: 3.585919508210552
+Maximum:              62.88179899682291
+Minimum:              37.534511466510594
+
+- Hourly Response Time-1
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-2
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-3
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-4
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-5
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-6
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-7
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-8
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-9
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-10
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-11
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-12
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-13
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-14
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-15
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-16
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-17
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-18
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-19
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-20
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-21
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-22
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-23
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+--------------------------- UB2 ----------------------------
+
+- UB Response time
+
+Sample mean:          50.24027097738766
+Sample variance:      12.25933048264136
+Sample std deviation: 3.5013326723751
+Maximum:              62.02580239018425
+Minimum:              39.77413859241642
+
+- Hourly Response Time-0
+
+Sample mean:          50.24027097738766
+Sample variance:      12.25933048264136
+Sample std deviation: 3.5013326723751
+Maximum:              62.02580239018425
+Minimum:              39.77413859241642
+
+- Hourly Response Time-1
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-2
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-3
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-4
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-5
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-6
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-7
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-8
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-9
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-10
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-11
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-12
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-13
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-14
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-15
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-16
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-17
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-18
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-19
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-20
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-21
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-22
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-23
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+--------------------------- UB3 ----------------------------
+
+- UB Response time
+
+Sample mean:          50.061334562972455
+Sample variance:      12.24591153222121
+Sample std deviation: 3.4994158844328878
+Maximum:              61.803984450616184
+Minimum:              38.21476088417694
+
+- Hourly Response Time-0
+
+Sample mean:          50.061334562972455
+Sample variance:      12.24591153222121
+Sample std deviation: 3.4994158844328878
+Maximum:              61.803984450616184
+Minimum:              38.21476088417694
+
+- Hourly Response Time-1
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-2
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-3
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-4
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-5
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-6
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-7
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-8
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-9
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-10
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-11
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-12
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-13
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-14
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-15
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-16
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-17
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-18
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-19
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-20
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-21
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-22
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-23
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+--------------------------- UB4 ----------------------------
+
+- UB Response time
+
+Sample mean:          50.19379715964622
+Sample variance:      12.745934770646302
+Sample std deviation: 3.5701449229192788
+Maximum:              62.34578863740899
+Minimum:              38.09049026342109
+
+- Hourly Response Time-0
+
+Sample mean:          50.19379715964622
+Sample variance:      12.745934770646302
+Sample std deviation: 3.5701449229192788
+Maximum:              62.34578863740899
+Minimum:              38.09049026342109
+
+- Hourly Response Time-1
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-2
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-3
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-4
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-5
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-6
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-7
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-8
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-9
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-10
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-11
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-12
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-13
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-14
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-15
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-16
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-17
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-18
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-19
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-20
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-21
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-22
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-23
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+--------------------------- UB5 ----------------------------
+
+- UB Response time
+
+Sample mean:          50.153918096273095
+Sample variance:      12.20081561605842
+Sample std deviation: 3.4929665924624045
+Maximum:              63.96166573325172
+Minimum:              40.280525230802596
+
+- Hourly Response Time-0
+
+Sample mean:          50.153918096273095
+Sample variance:      12.20081561605842
+Sample std deviation: 3.4929665924624045
+Maximum:              63.96166573325172
+Minimum:              40.280525230802596
+
+- Hourly Response Time-1
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-2
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-3
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-4
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-5
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-6
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-7
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-8
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-9
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-10
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-11
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-12
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-13
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-14
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-15
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-16
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-17
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-18
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-19
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-20
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-21
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-22
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+- Hourly Response Time-23
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+--------------------------- UB6 ----------------------------
+
+- UB Response time
+
+Sample mean:          50.09550005935369
+Sample variance:      12.252691680208153
+Sample std deviation: 3.500384504623478
+Maximum:              60.881991415750235
+Minimum:              39.170850625727326
+
+- Hourly Response Time-0
+
+Sample mean:          50.09550005935369
+Sample variance:      12.252691680208153
+Sample std deviation: 3.500384504623478
+Maximum:              60.881991415750235
+Minimum:              39.170850625727326
 
 - Hourly Response Time-1
 

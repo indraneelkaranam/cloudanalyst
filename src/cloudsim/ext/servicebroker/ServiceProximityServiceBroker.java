@@ -20,14 +20,14 @@ public class ServiceProximityServiceBroker implements CloudAppServiceBroker {
 
 	static int use = 0;
 
-	int attempt = 0;
+
 	int ongo = 0 ;
 	long restore = 0;
 	long leftMappings = 0;
 	protected Map<Integer, List<String>> regionalDataCenterIndex = null;
 	protected Map<String, Long> regionSpeed = null;
 	protected Map<String, Long> percentageSpeed = null;
-
+	protected Map<String, Integer> marker = null;
 	public ServiceProximityServiceBroker(){
 		regionalDataCenterIndex = new HashMap<Integer, List<String>>();
 		
@@ -39,6 +39,7 @@ public class ServiceProximityServiceBroker implements CloudAppServiceBroker {
 		int region;
 		regionSpeed = new HashMap<String, Long>();
 		percentageSpeed = new HashMap<String, Long>();
+		marker = new HashMap<String, Integer>();
 
 		for (GeoLocatable entity : allInternetEntities){
 			if (entity instanceof DatacenterController){
@@ -62,7 +63,7 @@ public class ServiceProximityServiceBroker implements CloudAppServiceBroker {
 			MachineList machineList = resource_.getMachineList();
 			//int x = machineList.getNumPE();
 
-
+			//System.out.println("Putting regionspeed"+" "+name+" "+resource_.getOverallspeed());
 			regionSpeed.put(name+"-Broker",resource_.getOverallspeed());
 
 			//System.out.println("Updating "+name+" "+resource_.getOverallspeed());
@@ -101,23 +102,27 @@ public class ServiceProximityServiceBroker implements CloudAppServiceBroker {
 				//System.out.println("Solo case");
 				dcName = regionalList.get(0);
 			} else {
+
 				//More than one candidate
 				// Load balance between them
 				//int rand = (int) (Math.random() * listSize);
 				//dcName = regionalList.get(rand);
 
-				if(attempt==0) {
+				if(!marker.containsKey(regionalList.get(0))) {
 					//percentage calculation
+					//System.out.println("Attempt 0");
 					long totalspeed = 0;
 					for(int i=0;i<listSize;i++) {
 						totalspeed += regionSpeed.get(regionalList.get(i));
+						marker.put(regionalList.get(i),1);
 					}
 					for(int i=0;i<listSize;i++)
 					{
 						Long frac = (regionSpeed.get(regionalList.get(i))*100)/totalspeed;
 						percentageSpeed.put(regionalList.get(i),(Long)(frac));
+						//System.out.println("Putting "+i+" "+regionalList.get(i)+" "+frac);
 					}
-					attempt = 1;
+
 					ongo = 0;
 					restore = percentageSpeed.get(regionalList.get(ongo));
 					leftMappings = restore;
@@ -130,18 +135,21 @@ public class ServiceProximityServiceBroker implements CloudAppServiceBroker {
 					leftMappings--;
 
 					dcName =  regionalList.get(ongo);
-					System.out.println("if case "+ leftMappings+" "+dcName);
+					//System.out.println("Attempt 1a "+dcName);
+					//System.out.println("if case "+ leftMappings+" "+dcName);
 				}
 				else
 				{
 					percentageSpeed.put(regionalList.get(ongo),restore);
 					ongo = (ongo+1)%listSize;
+					//System.out.println("problem lies here "+ ongo);
 					restore = percentageSpeed.get(regionalList.get(ongo));
 					leftMappings = restore;
 					leftMappings--;
 
 					dcName = regionalList.get(ongo);
-					System.out.println("else case "+ leftMappings+" "+dcName);
+					//System.out.println("Attempt 1b"+dcName);
+					//System.out.println("else case "+ leftMappings+" "+dcName);
 				}
 
 
