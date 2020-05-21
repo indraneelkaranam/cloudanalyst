@@ -28,6 +28,9 @@ public class ServiceProximityServiceBroker implements CloudAppServiceBroker {
 	protected Map<String, Long> regionSpeed = null;
 	protected Map<String, Long> percentageSpeed = null;
 	protected Map<String, Integer> marker = null;
+	protected Map<String, Integer> vmCount = null;
+    private Map<String, DatacenterController> dataCenters;
+    protected  Map<Integer, String> permanentDc= null;
 	public ServiceProximityServiceBroker(){
 		regionalDataCenterIndex = new HashMap<Integer, List<String>>();
 		
@@ -40,7 +43,8 @@ public class ServiceProximityServiceBroker implements CloudAppServiceBroker {
 		regionSpeed = new HashMap<String, Long>();
 		percentageSpeed = new HashMap<String, Long>();
 		marker = new HashMap<String, Integer>();
-
+        vmCount = new HashMap<String, Integer>();
+        permanentDc = new HashMap<Integer, String>();
 		for (GeoLocatable entity : allInternetEntities){
 			if (entity instanceof DatacenterController){
 				region = entity.getRegion();
@@ -49,7 +53,6 @@ public class ServiceProximityServiceBroker implements CloudAppServiceBroker {
 					l = new ArrayList<String>();
 					regionalDataCenterIndex.put(region, l);
 				}
-				//System.out.println(region+" "+ entity.get_name());
 				l.add(entity.get_name()); //which regions has which DC
 			}
 		}
@@ -62,19 +65,19 @@ public class ServiceProximityServiceBroker implements CloudAppServiceBroker {
 			DatacenterCharacteristics resource_ = temp.getResource_();
 			MachineList machineList = resource_.getMachineList();
 			//int x = machineList.getNumPE();
-
-			//System.out.println("Putting regionspeed"+" "+name+" "+resource_.getOverallspeed());
 			regionSpeed.put(name+"-Broker",resource_.getOverallspeed());
-
-			//System.out.println("Updating "+name+" "+resource_.getOverallspeed());
 			//System.out.println("No of PEs "+x+resource_.getOverallspeed());
 		}
-		//System.out.println("Dcs and Dcbs obtained "+Dcs1.size());
+        dataCenters = new HashMap<String, DatacenterController>();
+        for (DatacenterController dcb : Dcb1){
+            dataCenters.put(dcb.get_name(), dcb);
+
+        }
 	}
 	
 	public String getDestination(GeoLocatable inquirer) {  //invoked for each cloudlet
-		//use++;
-		//System.out.println("searching for region "+inquirer.getRegion()+" "+use);
+
+
 		List<Integer> proximityList = InternetCharacteristics.getInstance().getProximityList(inquirer.getRegion());
 		//proximityList.size() = 6(all regions)
 		int region;
@@ -99,18 +102,18 @@ public class ServiceProximityServiceBroker implements CloudAppServiceBroker {
 		if (regionalList != null){
 			int listSize = regionalList.size();
 			if (listSize == 1){
-				//System.out.println("Solo case");
 				dcName = regionalList.get(0);
 			} else {
-
+                //////////////////////////////default algo//////////////////////////////////////
 				//More than one candidate
 				// Load balance between them
 				//int rand = (int) (Math.random() * listSize);
 				//dcName = regionalList.get(rand);
+                //////////////////////////////default algo//////////////////////////////////////
 
-				if(!marker.containsKey(regionalList.get(0))) {
+               /////////////////percentage sharing Algo///////////////////////////////////////////////
+/*				if(!marker.containsKey(regionalList.get(0))) {
 					//percentage calculation
-					//System.out.println("Attempt 0");
 					long totalspeed = 0;
 					for(int i=0;i<listSize;i++) {
 						totalspeed += regionSpeed.get(regionalList.get(i));
@@ -120,7 +123,6 @@ public class ServiceProximityServiceBroker implements CloudAppServiceBroker {
 					{
 						Long frac = (regionSpeed.get(regionalList.get(i))*100)/totalspeed;
 						percentageSpeed.put(regionalList.get(i),(Long)(frac));
-						//System.out.println("Putting "+i+" "+regionalList.get(i)+" "+frac);
 					}
 
 					ongo = 0;
@@ -135,25 +137,22 @@ public class ServiceProximityServiceBroker implements CloudAppServiceBroker {
 					leftMappings--;
 
 					dcName =  regionalList.get(ongo);
-					//System.out.println("Attempt 1a "+dcName);
-					//System.out.println("if case "+ leftMappings+" "+dcName);
 				}
 				else
 				{
 					percentageSpeed.put(regionalList.get(ongo),restore);
 					ongo = (ongo+1)%listSize;
-					//System.out.println("problem lies here "+ ongo);
 					restore = percentageSpeed.get(regionalList.get(ongo));
 					leftMappings = restore;
 					leftMappings--;
 
 					dcName = regionalList.get(ongo);
-					//System.out.println("Attempt 1b"+dcName);
-					//System.out.println("else case "+ leftMappings+" "+dcName);
-				}
 
+				}              */
+                /////////////////////////////percentage sharing Algo///////////////////////////////////////////////
 
-				//System.out.println("list size "+listSize);
+                 /////////////////////////////////firstAttemptAlgo////////////////////////////////////////
+
 //				for(int i=0;i<listSize;i++)
 //				{
 //				//	System.out.println("region obtained "+ regionalList.get(i));
@@ -164,12 +163,34 @@ public class ServiceProximityServiceBroker implements CloudAppServiceBroker {
 //						dcName = regionalList.get(i);
 //					}
 //				}
+                /////////////////////////////////firstAttemptAlgo////////////////////////////////////////
+
+                /////////////////VMexperiment algo///////////////////////////////////////////////////////////
+
+                if(!marker.containsKey(regionalList.get(0))) {
+
+                    int max = 0;
+                    for (int i = 0; i < listSize; i++) {
+
+                        String Dcname = regionalList.get(i);
+                        marker.put(Dcname,1);
+                        DatacenterController dcb = dataCenters.get(Dcname);
+                        //System.out.println("Getting Vms for " + Dcname + " " + dcb.getVmStatesList().size());
+                        vmCount.put(Dcname, dcb.getVmStatesList().size());
+
+                        if(dcb.getVmStatesList().size()>max)
+                        {
+                            max = dcb.getVmStatesList().size();
+                            dcName = Dcname;
+                        }
+                    }
+                    permanentDc.put(region,dcName);
+                }
+                return permanentDc.get(region);
+                /////////////////VMexperiment algo///////////////////////////////////////////////////////////
 			}
 		}
 
-
-
-		//System.out.println("counter of "+dcName+" "+counter.get(dcName));
 		return dcName;
 	}
 

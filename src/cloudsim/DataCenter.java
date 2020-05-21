@@ -49,7 +49,7 @@ public class DataCenter extends CloudSim {
 	protected double lastProcessTime;
 	protected HashMap<Integer,Double> debts;
 	protected LinkedList<Storage> storageList;
-
+    static int use = 0;
 	/**
      * Allocates a new Datacenter object.
      *
@@ -913,6 +913,9 @@ public class DataCenter extends CloudSim {
 			MachineList list = vmprovisioner.getResources();
 			double smallerTime = Double.MAX_VALUE;
 			//for each host...
+
+            use++;
+            //System.out.println("Updating Host "+list.size()+" "+use);
 			for(int i=0;i<list.size();i++){
 				Host host = (Host) list.get(i);
 				double time = host.updateVMsProcessing(GridSim.clock());//inform VMs to update processing

@@ -29,7 +29,13 @@ public class SimpleVMProvisioner extends VMProvisioner {
 	protected HashMap<String, Host> vmTable;
 	protected HashMap<String, Integer> usedPEs;
 	int[] freePEs;
-
+	long[] freePEpower;
+	static int zeros = 0;
+	static int ones = 0;
+	long overallCapacity = 0;
+	long[] rotationCount;
+	long mappings = 0;
+	int currIndex = 0;
 	/**
 	 * Creates the new SimpleVMProvisioner object
 	 * @pre $none
@@ -53,8 +59,29 @@ public class SimpleVMProvisioner extends VMProvisioner {
 		
 		super.init(list);
 		freePEs = new int[resources.size()];
-		for (int i=0;i<freePEs.length;i++) freePEs[i]=((Host)resources.get(i)).getNumPE();
+		freePEpower = new long[resources.size()];
+		rotationCount = new long[resources.size()];
 
+		//System.out.println("Free PEs list");
+		for (int i=0;i<freePEs.length;i++) {
+			freePEs[i] = ((Host) resources.get(i)).getNumPE();
+			//System.out.println(freePEs[i]);
+		}
+
+		//System.out.println("Free PEs power  list");
+		for(int i=0;i<freePEpower.length;i++) {
+			freePEpower[i] = ((Host)resources.get(i)).getMIPSRating();
+			overallCapacity+=freePEpower[i];
+		//	System.out.println(freePEpower[i]);
+		}
+		///rotation count delivery
+		for(int i=0;i<freePEpower.length;i++) {
+			rotationCount[i] = (freePEpower[i] * 100) / overallCapacity;
+			//System.out.println("Rotation count "+rotationCount[i]);
+		}
+
+		mappings = rotationCount[0];
+		currIndex = 0;
 	}
 	
 	/**
@@ -77,15 +104,31 @@ public class SimpleVMProvisioner extends VMProvisioner {
 			do{//we still trying until we find a host or untill we try all of them
 				int moreFree=Integer.MIN_VALUE;
 				int idx=-1;
-			
-				//we want the host with less pes in use
-				for(int i=0;i<freePEsTemp.length;i++){
-					if(freePEsTemp[i]>moreFree){
-						moreFree=freePEsTemp[i];
-						idx=i;
-					}
+
+
+				if(mappings>0)
+					idx = currIndex;
+				else
+				{
+					currIndex = (currIndex+1)%freePEsTemp.length;
+					mappings = rotationCount[currIndex];
+					idx = currIndex;
+					mappings--;
 				}
-			
+
+
+				//we want the host with less pes in use
+//				for(int i=0;i<freePEsTemp.length;i++){
+//					if(freePEsTemp[i]>moreFree){
+//						moreFree=freePEsTemp[i];
+//						idx=i;
+//					}
+//				}
+				System.out.println("Returning index "+idx);
+//				if(idx==0)
+//					zeros++;
+//				else ones++;
+//				System.out.println("Number of ones and zeros "+zeros+" "+ones);
 				Host host = (Host)resources.get(idx);
 				result = host.vmCreate(vm);
 			

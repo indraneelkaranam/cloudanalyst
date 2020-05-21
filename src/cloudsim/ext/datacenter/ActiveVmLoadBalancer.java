@@ -56,7 +56,7 @@ public class ActiveVmLoadBalancer extends VmLoadBalancer implements CloudSimEven
 	public int getNextAvailableVm(){
 		int vmId = -1;
 
-		/*Map.Entry<Integer, Integer> temp;
+		/*Map.Entry<Integer, Integer> temp;         //testing purpose
 		temp = pq.poll();
 
 		vmId = temp.getKey();
@@ -77,7 +77,11 @@ public class ActiveVmLoadBalancer extends VmLoadBalancer implements CloudSimEven
 		for(Map.Entry<Integer, Integer> entry: usagePurpose.entrySet())
 			pq.offer(entry);
 
-		usagePurpose.clear();  */
+		usagePurpose.clear();  */                  //testing purpose
+
+
+
+
 
 		//Find the vm with least number of allocations
 		

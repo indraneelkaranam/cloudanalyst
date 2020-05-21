@@ -113,7 +113,9 @@ public class Host extends Machine {
 	 * @post $none
 	 */
 	public synchronized boolean vmCreate(VMCharacteristics vm){
-		
+
+
+		System.out.println("Creating Vm here ");
 		boolean result = bwProvisioner.allocateBWforVM(vm);
 		
 		if(!result) {
@@ -233,6 +235,8 @@ public class Host extends Machine {
 	public double updateVMsProcessing(double currentTime){
 		
 		double smallerTime = Double.MAX_VALUE;
+
+		//System.out.println("Getting vmlist size for each PE"+ vmList.size());
 		for(int i=0;i<vmList.size();i++){
 			VirtualMachine vm = vmList.get(i);
 			double time = vm.getVMScheduler().updateVMProcessing(currentTime,allocationPolicy.getMIPSShare(vm.getVmId(),vm.getUserId()));

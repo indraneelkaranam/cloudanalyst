@@ -29,7 +29,7 @@ public class TimeSharedAllocationPolicy extends VMMAllocationPolicy {
 
 	protected HashMap<String,Integer> peAllocationMap;
 	protected int pesInUse;
-
+	static int use = 0;
 	/**
 	 * Creates a new TimeSharedAllocationPolicy
 	 * @param pelist list of PEs managed by the AllocationPolicy
@@ -54,7 +54,9 @@ public class TimeSharedAllocationPolicy extends VMMAllocationPolicy {
 	@Override
 	public synchronized boolean allocatePEsForVM(VMCharacteristics vmcharacteristics){
 		peAllocationMap.put(vmcharacteristics.getUserId()+"-"+vmcharacteristics.getVmId(),vmcharacteristics.getCpus());
+		//System.out.println("Putting cpus "+vmcharacteristics.getCpus());
 		pesInUse+=vmcharacteristics.getCpus();
+		//System.out.println("Total pes in use "+pesInUse);
 		return true;
 	}
 
@@ -83,6 +85,10 @@ public class TimeSharedAllocationPolicy extends VMMAllocationPolicy {
 	public double[] getMIPSShare(int vmId, int userId) {
 			
 		//divides available MIPS among all VMs
+
+		    use++;
+
+		    //System.out.println("Sharing MIPS among all vms "+pelist.size());
 			double[] myShare = new double[pelist.size()];
 			for(int i=0;i<myShare.length;i++) myShare[i]=0;
 
@@ -91,14 +97,19 @@ public class TimeSharedAllocationPolicy extends VMMAllocationPolicy {
 				capacity+=((PE)pelist.get(i)).getMIPSRating();
 				if(i+1==pesInUse) break;
 			}
-			
+
+
+			//System.out.println("Total Capacity "+capacity+" perInuse "+pesInUse);
+
 			capacity/=pesInUse;
 
 			int pes = this.peAllocationMap.get(userId+"-"+vmId);
+
+			//System.out.println("Pes "+pes);
 			for(int i=0;i<pes;i++){
 				myShare[i]=capacity;
 			}
-
+		    //System.out.println("Each one got vms "+capacity+" for processors "+pelist.size());
 			return myShare;		
 	}
 
