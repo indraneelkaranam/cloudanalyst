@@ -41,7 +41,7 @@ public class ThrottledVmLoadBalancer extends VmLoadBalancer implements CloudSimE
 	 * 			{@link DatacenterController}
 	 */
 	@Override
-	public int getNextAvailableVm(){
+	public int getNextAvailableVm(int peakTime){
 		int vmId = -1;
 		
 		if (vmStatesList.size() > 0){

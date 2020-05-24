@@ -12,6 +12,8 @@ package cloudsim;
 
 import gridsim.MachineList;
 
+import javax.swing.plaf.synth.SynthEditorPaneUI;
+import java.util.Arrays;
 import java.util.HashMap;
 
 
@@ -19,23 +21,72 @@ import java.util.HashMap;
  * SimpleVMProvisioner is an VMProvisioner that
  * chooses, as the host for a VM, the host with
  * less PEs in use.
- * 
+ * public class Capacity implements Comparable<Capacity>
+ * //{
+ * //
+ * //}
  * @author Rodrigo N. Calheiros
  * @since CloudSim Toolkit 1.0 Beta
  * @invariant $none
  */
+
+class Capacity implements Comparable<Capacity>{
+
+	private int index;
+	private long power;
+
+	public Capacity(int index,long power)
+	{
+		super();
+		this.index = index;
+		this.power = power;
+	}
+
+	public void setIndex(int index) {
+		this.index = index;
+	}
+
+	public int getIndex() {
+		return index;
+	}
+
+	public long getPower() {
+		return power;
+	}
+
+	public void setPower(long power) {
+		this.power = power;
+	}
+
+	@Override
+	public int compareTo(Capacity o) {
+		long comparePower = ((Capacity)o).getPower();
+		return Math.toIntExact(this.power - comparePower);
+
+	}
+}
+
+
 public class SimpleVMProvisioner extends VMProvisioner {
 	
 	protected HashMap<String, Host> vmTable;
 	protected HashMap<String, Integer> usedPEs;
 	int[] freePEs;
 	long[] freePEpower;
-	static int zeros = 0;
-	static int ones = 0;
 	long overallCapacity = 0;
 	long[] rotationCount;
 	long mappings = 0;
 	int currIndex = 0;
+	Capacity[] low;
+	Capacity[] high;
+	int lowTurn ;
+	int highTurn ;
+	int lowPos ;
+	int highPos ;
+	int lowSize;
+	int highSize;
+	int size;
+
 	/**
 	 * Creates the new SimpleVMProvisioner object
 	 * @pre $none
@@ -61,27 +112,69 @@ public class SimpleVMProvisioner extends VMProvisioner {
 		freePEs = new int[resources.size()];
 		freePEpower = new long[resources.size()];
 		rotationCount = new long[resources.size()];
+		Capacity[] c = new Capacity[resources.size()];
 
-		//System.out.println("Free PEs list");
 		for (int i=0;i<freePEs.length;i++) {
 			freePEs[i] = ((Host) resources.get(i)).getNumPE();
-			//System.out.println(freePEs[i]);
 		}
-
-		//System.out.println("Free PEs power  list");
 		for(int i=0;i<freePEpower.length;i++) {
 			freePEpower[i] = ((Host)resources.get(i)).getMIPSRating();
 			overallCapacity+=freePEpower[i];
-		//	System.out.println(freePEpower[i]);
+			c[i] = new Capacity(i,freePEpower[i]);
 		}
-		///rotation count delivery
-		for(int i=0;i<freePEpower.length;i++) {
-			rotationCount[i] = (freePEpower[i] * 100) / overallCapacity;
-			//System.out.println("Rotation count "+rotationCount[i]);
+		Arrays.sort(c);
+
+		//System.out.println("After Sorting ");
+		for(Capacity ca:c)
+		{
+			System.out.println(ca.getIndex()+" "+ca.getPower());
 		}
 
+		size = c.length;
+		if(size%2==1)
+		{
+			lowSize = size/2;
+			highSize = size/2+1;
+			low  = new Capacity[lowSize];
+			high = new Capacity[highSize];
+			for(int i=0;i<lowSize;i++)
+				low[i] = c[i];
+			for(int i=lowSize;i<size;i++)
+				high[i-lowSize] = c[i];
+		}
+		else
+		{
+			lowSize = size/2;
+			highSize = size/2;
+			low  = new Capacity[lowSize];
+			high = new Capacity[highSize];
+			for(int i=0;i<lowSize;i++)
+				low[i] = c[i];
+			for(int i=lowSize;i<size;i++)
+				high[i-lowSize] = c[i];
+		}
+		highTurn = 1;
+		lowTurn = 0;
+		highPos = highSize-1;
+		lowPos = 0;
+		//System.out.println("Free PEs power  list");
+/*
+		///rotation count delivery
+		if(freePEpower.length>1) {
+			for (int i = 0; i < freePEpower.length; i++) {
+				rotationCount[i] = (freePEpower[i] * 100) / overallCapacity;
+
+				//rotationCount[i] = overallCapacity / freePEpower[i];
+				//rotationCount[i] = 100-rotationCount[i];
+				//System.out.println("Rotation count " + rotationCount[i]);
+			}
+		}
+		else
+		{
+			rotationCount[0] = overallCapacity / freePEpower[0];
+		}
 		mappings = rotationCount[0];
-		currIndex = 0;
+		currIndex = 0;*/
 	}
 	
 	/**
@@ -106,29 +199,50 @@ public class SimpleVMProvisioner extends VMProvisioner {
 				int idx=-1;
 
 
-				if(mappings>0)
+				if(highTurn==1)
+				{
+					idx = high[highPos].getIndex();
+					highPos--;
+					if(highPos<0)
+						highPos = highSize-1;
+					if(lowSize>0) {
+						highTurn = 0;
+						lowTurn = 1;
+					}
+				}
+				else
+				{
+
+					idx = low[lowPos].getIndex();
+					lowPos++;
+					if(lowPos>=lowSize)
+						lowPos = 0;
+					highTurn = 1;
+					lowTurn = 0;
+				} 
+/*				if(mappings>0) {
 					idx = currIndex;
+					mappings--;
+				}
 				else
 				{
 					currIndex = (currIndex+1)%freePEsTemp.length;
 					mappings = rotationCount[currIndex];
 					idx = currIndex;
 					mappings--;
-				}
+				}*/
+
 
 
 				//we want the host with less pes in use
-//				for(int i=0;i<freePEsTemp.length;i++){
-//					if(freePEsTemp[i]>moreFree){
-//						moreFree=freePEsTemp[i];
-//						idx=i;
-//					}
-//				}
-				System.out.println("Returning index "+idx);
-//				if(idx==0)
-//					zeros++;
-//				else ones++;
-//				System.out.println("Number of ones and zeros "+zeros+" "+ones);
+	/*		for(int i=0;i<freePEsTemp.length;i++){
+					if(freePEsTemp[i]>moreFree){
+						moreFree=freePEsTemp[i];
+						idx=i;
+					}
+				}*/
+
+				//System.out.println("Returning idx  "+idx);
 				Host host = (Host)resources.get(idx);
 				result = host.vmCreate(vm);
 			

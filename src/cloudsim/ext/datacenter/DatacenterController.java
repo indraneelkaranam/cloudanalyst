@@ -60,6 +60,7 @@ public class DatacenterController extends DatacenterBroker implements GeoLocatab
 	private Map<Integer, Long[]> processingCloudletStatuses;
 	private int requestsPerCloudlet;
 	private List<InternetCloudlet> waitingQueue;
+	private List<Integer> waitingQueuePeakStatus;
 	private String dcName;
 	private boolean lastVmCreateFailed = false;
 	private int allRequestsProcessed = 0;
@@ -97,6 +98,8 @@ public class DatacenterController extends DatacenterBroker implements GeoLocatab
 		vmUsage = new HashMap<Integer, Double[]>();
 		vmStatesList = Collections.synchronizedMap(new HashMap<Integer, VirtualMachineState>());
 		waitingQueue = Collections.synchronizedList(new LinkedList<InternetCloudlet>());
+		waitingQueuePeakStatus = Collections.synchronizedList(new LinkedList<Integer>());
+
 		processingCloudletStatuses = new HashMap<Integer, Long[]>();
 		
 		if (loadBalancePolicy.equals(Constants.LOAD_BALANCE_ACTIVE)){
@@ -305,28 +308,43 @@ public class DatacenterController extends DatacenterBroker implements GeoLocatab
 	}
 	
 	private void submitWaitingCloudlet(){
-		int nextAvailVM = loadBalancer.getNextAvailableVm();
-				
-		if ((nextAvailVM != -1) && (waitingQueue.size() > 0)){
+
+		if(waitingQueue.size() > 0)
+		{
+
 			InternetCloudlet cl = waitingQueue.remove(0);
-			submitCloudlet(cl, nextAvailVM);
+
+			int peakTime = waitingQueuePeakStatus.remove(0);
+
+			int nextAvailVM = loadBalancer.getNextAvailableVm(peakTime);
+
+			if ((nextAvailVM != -1) && (waitingQueue.size() > 0)){
+
+				submitCloudlet(cl, nextAvailVM);
+			}
+			if(nextAvailVM==-1)
+			{
+				waitingQueue.add(cl);
+				waitingQueuePeakStatus.add(peakTime);
+			}
 		}
+
 	}
 
 	private void submitNewCloudlet(InternetCloudlet cl) {
 		
-		hourlyArrival.addEvent(GridSim.clock(), cl.getRequestCount());
+		int peakTime = hourlyArrival.addEvent(GridSim.clock(), cl.getRequestCount());
 		if (loadBalancer == null){
 			loadBalancer = new RoundRobinVmLoadBalancer(vmStatesList);
 		}
 		
-		int nextAvailVM = loadBalancer.getNextAvailableVm();
+		int nextAvailVM = loadBalancer.getNextAvailableVm(peakTime);
 					
 		if (nextAvailVM == -1){
 			//All VM's are busy. Put it in queue
 			//System.out.println("VM's busy, queueing " + cl);
 			waitingQueue.add(cl);	
-			
+			waitingQueuePeakStatus.add(peakTime);
 			queuedCount++;
 		} else {
 			submitCloudlet(cl, nextAvailVM);

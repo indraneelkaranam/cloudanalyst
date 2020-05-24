@@ -53,7 +53,7 @@ public class ActiveVmLoadBalancer extends VmLoadBalancer implements CloudSimEven
 	 * 			evenly distributed among the VMs.
 	 */
 	@Override
-	public int getNextAvailableVm(){
+	public int getNextAvailableVm(int peakTime){
 		int vmId = -1;
 
 		/*Map.Entry<Integer, Integer> temp;         //testing purpose

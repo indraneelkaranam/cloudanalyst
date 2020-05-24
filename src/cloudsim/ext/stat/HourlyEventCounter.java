@@ -25,19 +25,20 @@ public class HourlyEventCounter {
 	}
 	
 	
-	public void addEvent(double timeInMS, int countAs){
+	public int addEvent(double timeInMS, int countAs){
 		use++;
 		//System.out.println("Time Original(HourlyEventCounter.java) "+timeInMS+" count AS "+countAs+ " use "+use);
 		int timeInHrs = (int) Math.floor( (timeInMS / (1000 * 60 * 60)) % 24);
 
 		timeInHrs = getCurrentTime.CurrentTime();
-
+		int peakTime = getCurrentTime.getPeakStatus();
 		//System.out.println("Current Updated Time is "+timeInHrs);
 		if (timeInHrs < 24){
 			hourlyCount[timeInHrs] += countAs;
 			hourlyOccur[timeInHrs]++;
 		}
 		printHourlyCounts();
+		return peakTime;
 	}
 	
 	public void printHourlyCounts(){

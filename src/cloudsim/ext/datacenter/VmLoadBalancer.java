@@ -30,7 +30,7 @@ abstract public class VmLoadBalancer {
 	 * @return id of the next available Virtual Machine to which the next task should be
 	 * 			allocated 
 	 */
-	abstract public int getNextAvailableVm();
+	abstract public int getNextAvailableVm(int peakTime);
 	
 	/**
 	 * Used internally to update VM allocation statistics. Should be called by all impelementing

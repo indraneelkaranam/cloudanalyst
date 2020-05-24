@@ -112,7 +112,7 @@ public class ServiceProximityServiceBroker implements CloudAppServiceBroker {
                 //////////////////////////////default algo//////////////////////////////////////
 
                /////////////////percentage sharing Algo///////////////////////////////////////////////
-/*				if(!marker.containsKey(regionalList.get(0))) {
+				if(!marker.containsKey(regionalList.get(0))) {
 					//percentage calculation
 					long totalspeed = 0;
 					for(int i=0;i<listSize;i++) {
@@ -148,7 +148,7 @@ public class ServiceProximityServiceBroker implements CloudAppServiceBroker {
 
 					dcName = regionalList.get(ongo);
 
-				}              */
+				}
                 /////////////////////////////percentage sharing Algo///////////////////////////////////////////////
 
                  /////////////////////////////////firstAttemptAlgo////////////////////////////////////////
@@ -167,7 +167,7 @@ public class ServiceProximityServiceBroker implements CloudAppServiceBroker {
 
                 /////////////////VMexperiment algo///////////////////////////////////////////////////////////
 
-                if(!marker.containsKey(regionalList.get(0))) {
+ /*               if(!marker.containsKey(regionalList.get(0))) {
 
                     int max = 0;
                     for (int i = 0; i < listSize; i++) {
@@ -186,7 +186,7 @@ public class ServiceProximityServiceBroker implements CloudAppServiceBroker {
                     }
                     permanentDc.put(region,dcName);
                 }
-                return permanentDc.get(region);
+                return permanentDc.get(region); */
                 /////////////////VMexperiment algo///////////////////////////////////////////////////////////
 			}
 		}
