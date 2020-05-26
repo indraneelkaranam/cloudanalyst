@@ -197,7 +197,7 @@ public class SimpleVMProvisioner extends VMProvisioner {
 			do{//we still trying until we find a host or untill we try all of them
 				int moreFree=Integer.MIN_VALUE;
 				int idx=-1;
-
+/////////////////////////////////////////////////////////////////////////////////////////////
 
 				if(highTurn==1)
 				{
@@ -219,7 +219,12 @@ public class SimpleVMProvisioner extends VMProvisioner {
 						lowPos = 0;
 					highTurn = 1;
 					lowTurn = 0;
-				} 
+				}
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+
 /*				if(mappings>0) {
 					idx = currIndex;
 					mappings--;
@@ -232,15 +237,15 @@ public class SimpleVMProvisioner extends VMProvisioner {
 					mappings--;
 				}*/
 
-
+///////////////////////////////////////////////////////////////////////////////////////////
 
 				//we want the host with less pes in use
-	/*		for(int i=0;i<freePEsTemp.length;i++){
+			   /*for(int i=0;i<freePEsTemp.length;i++){
 					if(freePEsTemp[i]>moreFree){
 						moreFree=freePEsTemp[i];
 						idx=i;
 					}
-				}*/
+				} */
 
 				//System.out.println("Returning idx  "+idx);
 				Host host = (Host)resources.get(idx);

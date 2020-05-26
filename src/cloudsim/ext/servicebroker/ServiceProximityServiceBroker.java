@@ -105,10 +105,10 @@ public class ServiceProximityServiceBroker implements CloudAppServiceBroker {
 				dcName = regionalList.get(0);
 			} else {
                 //////////////////////////////default algo//////////////////////////////////////
-				//More than one candidate
-				// Load balance between them
-				//int rand = (int) (Math.random() * listSize);
-				//dcName = regionalList.get(rand);
+//				More than one candidate
+//				 Load balance between them
+//				int rand = (int) (Math.random() * listSize);
+//				dcName = regionalList.get(rand);
                 //////////////////////////////default algo//////////////////////////////////////
 
                /////////////////percentage sharing Algo///////////////////////////////////////////////
