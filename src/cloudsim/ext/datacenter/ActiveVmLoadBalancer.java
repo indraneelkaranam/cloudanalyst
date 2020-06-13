@@ -3,11 +3,11 @@ package cloudsim.ext.datacenter;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.PriorityQueue;
 import cloudsim.ext.Constants;
 import cloudsim.ext.event.CloudSimEvent;
 import cloudsim.ext.event.CloudSimEventListener;
 import cloudsim.ext.event.CloudSimEvents;
+import gridsim.GridSim;
 
 /**
  * ActiveVmLoadBalancer load balances the tasks among available VM's in a way to even out
@@ -24,28 +24,17 @@ public class ActiveVmLoadBalancer extends VmLoadBalancer implements CloudSimEven
 
 	private Map<Integer, Integer> pendingRequests;
 
-	//private  Map<Integer, Integer> usagePurpose;
+	private Map<Integer, Integer> completedRequests;
 
-	//private  Map<Integer, Integer> pqPurpose;
-	PriorityQueue<Map.Entry<Integer, Integer>> pq = new PriorityQueue<>(
-			(a,b) -> a.getValue()==b.getValue() ? b.getKey().compareTo(a.getKey()) : a.getValue()-b.getValue()
-	);
+	double storage[] = new double[1000];;
+	double sum[] = new double[1000]; ;
 
 	public ActiveVmLoadBalancer(DatacenterController dcb){
 		dcb.addCloudSimEventListener(this);
 		this.vmStatesList = dcb.getVmStatesList();
 		this.currentAllocationCounts = Collections.synchronizedMap(new HashMap<Integer, Integer>());
 		pendingRequests = new HashMap<Integer, Integer>();
-		//usagePurpose =  new HashMap<Integer, Integer>();
-		//pqPurpose = new HashMap<Integer, Integer>();
-//		for (int availableVmId : vmStatesList.keySet()){
-//			pendingRequests.put(availableVmId,0);
-//			//pqPurpose.put(availableVmId,0);
-//		}
-		/*for(Map.Entry<Integer, Integer> entry: pendingRequests.entrySet())
-		{
-			pq.offer(entry);
-		}*/
+		completedRequests =  new HashMap<Integer, Integer>();
 	}
 
 	/**
@@ -55,45 +44,38 @@ public class ActiveVmLoadBalancer extends VmLoadBalancer implements CloudSimEven
 	@Override
 	public int getNextAvailableVm(int peakTime){
 		int vmId = -1;
+////////////////////////////////////////////////////////////////////////////////////////////////\
 
-		//System.out.println("Request arrived ");
+		if (currentAllocationCounts.size() < vmStatesList.size()){
+			for (int availableVmId : vmStatesList.keySet()){
+				if (!currentAllocationCounts.containsKey(availableVmId)){
+					vmId = availableVmId;
+					break;
+				}
+			}
+		} else {
+			int currCount;
+			int minCount = Integer.MAX_VALUE;
 
-		/*Map.Entry<Integer, Integer> temp;         //testing purpose
-		temp = pq.poll();
+			for (int thisVmId : currentAllocationCounts.keySet()){
+				currCount = currentAllocationCounts.get(thisVmId);
+				if (currCount < minCount){
+					minCount = currCount;
+					vmId = thisVmId;
+				}
+			}
+		}
 
-		vmId = temp.getKey();
-
-		int count = temp.getValue();
-
-		Integer alloCount = currentAllocationCounts.get(vmId);
-
-		if(alloCount==null)
-			alloCount = 0;
-		pendingRequests.put(vmId,count+1);
-
-
-		usagePurpose.clear();
-		usagePurpose.put(vmId,alloCount+count+1);
-		pqPurpose.put(vmId,alloCount+count+1);
-
-		for(Map.Entry<Integer, Integer> entry: usagePurpose.entrySet())
-			pq.offer(entry);
-
-		usagePurpose.clear();  */                  //testing purpose
-
-
-
-
-
+////////////////////////////////////////////////////////////////////////////////////////////////
 		//Find the vm with least number of allocations
 		
 		//If all available vms are not allocated, allocated the new ones
-		if (pendingRequests.size() < vmStatesList.size()){
+		/*if (pendingRequests.size() < vmStatesList.size()){
 			for (int availableVmId : vmStatesList.keySet()){
 				if (!pendingRequests.containsKey(availableVmId)){
 					vmId = availableVmId;
 					pendingRequests.put(vmId,1);
-					//System.out.println("Assigning as first Attempt "+vmId);
+
 					break;
 				}				
 			}
@@ -109,16 +91,19 @@ public class ActiveVmLoadBalancer extends VmLoadBalancer implements CloudSimEven
 				Integer temp2 = pendingRequests.get(thisVmId);
 				if(temp2==null)
 					temp2 = 0;
-				currCount = temp1+temp2;
+				Integer temp3 = completedRequests.get(thisVmId);
+				if(temp3==null)
+					temp3 = 0;
+				currCount = temp1+temp2+temp3;
 				if (currCount < minCount){
 					minCount = currCount;
 					vmId = thisVmId;
 				}
 			}
 
-			pendingRequests.put(vmId,minCount+1);
-		}
-		
+			pendingRequests.put(vmId,pendingRequests.get(vmId)+1);
+		}*/
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 		allocatedVm(vmId);
 		
 		return vmId;
@@ -130,7 +115,7 @@ public class ActiveVmLoadBalancer extends VmLoadBalancer implements CloudSimEven
 		if (e.getId() == CloudSimEvents.EVENT_CLOUDLET_ALLOCATED_TO_VM){
 			int vmId = (Integer) e.getParameter(Constants.PARAM_VM_ID);
 
-			Integer currCount = currentAllocationCounts.remove(vmId);
+			Integer currCount = currentAllocationCounts.get(vmId);
 			if (currCount == null){
 				currCount = 1;
 			} else {
@@ -138,10 +123,10 @@ public class ActiveVmLoadBalancer extends VmLoadBalancer implements CloudSimEven
 			}
 			currentAllocationCounts.put(vmId, currCount);
 
-			int pendCount = pendingRequests.get(vmId);
-			pendCount--;
-			pendingRequests.put(vmId,pendCount);
-			//System.out.println("Allocation Table Updated ");
+//			int pendCount = pendingRequests.get(vmId);
+//			pendCount--;
+//			pendingRequests.put(vmId,pendCount);
+//			storage[vmId] = GridSim.clock();
 
 
 		} else if (e.getId() == CloudSimEvents.EVENT_VM_FINISHED_CLOUDLET){
@@ -151,6 +136,13 @@ public class ActiveVmLoadBalancer extends VmLoadBalancer implements CloudSimEven
 				currCount--;
 				currentAllocationCounts.put(vmId, currCount);
 			}
+//			currCount = completedRequests.get(vmId);
+			if(currCount==null)
+				currCount = 0;
+			else
+				currCount++;
+//			completedRequests.put(vmId,currCount);
+//			sum[vmId] += GridSim.clock() - storage[vmId];
 		}
 
 	}

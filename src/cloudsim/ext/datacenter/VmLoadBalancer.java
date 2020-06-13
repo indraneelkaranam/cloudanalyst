@@ -39,7 +39,7 @@ abstract public class VmLoadBalancer {
 	 * @param currVm
 	 */
 	protected void allocatedVm(int currVm){
-		
+
 		Integer currCount = vmAllocationCounts.get(currVm);
 		if (currCount == null){
 			currCount = 0;
@@ -52,6 +52,7 @@ abstract public class VmLoadBalancer {
 	 * @return
 	 */
 	public Map<Integer, Integer> getVmAllocationCounts(){
+
 		return vmAllocationCounts;
 	}
 }

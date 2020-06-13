@@ -77,6 +77,7 @@ public class SimpleVMProvisioner extends VMProvisioner {
 	long[] rotationCount;
 	long mappings = 0;
 	int currIndex = 0;
+	Capacity[] c;
 	Capacity[] low;
 	Capacity[] high;
 	int lowTurn ;
@@ -86,6 +87,7 @@ public class SimpleVMProvisioner extends VMProvisioner {
 	int lowSize;
 	int highSize;
 	int size;
+	int pointer;
 
 	/**
 	 * Creates the new SimpleVMProvisioner object
@@ -112,7 +114,7 @@ public class SimpleVMProvisioner extends VMProvisioner {
 		freePEs = new int[resources.size()];
 		freePEpower = new long[resources.size()];
 		rotationCount = new long[resources.size()];
-		Capacity[] c = new Capacity[resources.size()];
+		c = new Capacity[resources.size()];
 
 		for (int i=0;i<freePEs.length;i++) {
 			freePEs[i] = ((Host) resources.get(i)).getNumPE();
@@ -157,6 +159,7 @@ public class SimpleVMProvisioner extends VMProvisioner {
 		lowTurn = 0;
 		highPos = highSize-1;
 		lowPos = 0;
+		pointer = 0;
 		//System.out.println("Free PEs power  list");
 /*
 		///rotation count delivery
@@ -197,9 +200,16 @@ public class SimpleVMProvisioner extends VMProvisioner {
 			do{//we still trying until we find a host or untill we try all of them
 				int moreFree=Integer.MIN_VALUE;
 				int idx=-1;
+////////////////////////////////////////////////////////////////////////////////////////////
+
+/*				idx = c[pointer].getIndex();
+				pointer++;
+				if(pointer>=size)
+					pointer = 0; */
+
 /////////////////////////////////////////////////////////////////////////////////////////////
 
-				if(highTurn==1)
+			/*	if(highTurn==1)
 				{
 					idx = high[highPos].getIndex();
 					highPos--;
@@ -209,17 +219,21 @@ public class SimpleVMProvisioner extends VMProvisioner {
 						highTurn = 0;
 						lowTurn = 1;
 					}
+					System.out.print("Assigned Higher one "+idx);
 				}
 				else
 				{
-
 					idx = low[lowPos].getIndex();
 					lowPos++;
 					if(lowPos>=lowSize)
 						lowPos = 0;
-					highTurn = 1;
-					lowTurn = 0;
-				}
+					lowTurn--;
+					if(lowTurn==0) {
+						highTurn = 1;
+						lowTurn = 0;
+					}
+					System.out.print("Assigned Lower one "+idx);
+				}*/
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////
@@ -240,17 +254,18 @@ public class SimpleVMProvisioner extends VMProvisioner {
 ///////////////////////////////////////////////////////////////////////////////////////////
 
 				//we want the host with less pes in use
-			   /*for(int i=0;i<freePEsTemp.length;i++){
+			   for(int i=0;i<freePEsTemp.length;i++){
 					if(freePEsTemp[i]>moreFree){
+
 						moreFree=freePEsTemp[i];
 						idx=i;
 					}
-				} */
+				}
 
-				//System.out.println("Returning idx  "+idx);
+				System.out.println("Returning idx  "+idx);
 				Host host = (Host)resources.get(idx);
 				result = host.vmCreate(vm);
-			
+			    // System.out.println("Assigning vmid "+vm.getVmId()+"to idx "+idx);
 				if(result){//if vm were succesfully created in the host
 					vmTable.put(vm.getVmId()+"-"+vm.getUserId(),host);
 					usedPEs.put(vm.getVmId()+"-"+vm.getUserId(),requiredPEs);

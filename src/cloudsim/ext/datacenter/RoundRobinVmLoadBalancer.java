@@ -26,7 +26,7 @@ public class RoundRobinVmLoadBalancer extends VmLoadBalancer {
 	public int getNextAvailableVm(int peakTime){
 
 
-		if(peakTime==1)
+		/*if(peakTime==1)
 		{
 			allocatedVm(peakcurrvm);
 			int x = peakcurrvm;
@@ -43,8 +43,8 @@ public class RoundRobinVmLoadBalancer extends VmLoadBalancer {
 			if(normalcurrvm>=vmStatesList.size())
 				normalcurrvm=1;
 			return x;
-		}
-		/*currVm++;
+		} */
+		currVm++;
 		
 		if (currVm >= vmStatesList.size()){
 			currVm = 0;
@@ -52,7 +52,7 @@ public class RoundRobinVmLoadBalancer extends VmLoadBalancer {
 		
 		allocatedVm(currVm);
 		
-		return currVm;*/
+		return currVm;
 		
 	}
 }
