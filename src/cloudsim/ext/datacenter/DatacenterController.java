@@ -101,7 +101,9 @@ public class DatacenterController extends DatacenterBroker implements GeoLocatab
 		waitingQueuePeakStatus = Collections.synchronizedList(new LinkedList<Integer>());
 
 		processingCloudletStatuses = new HashMap<Integer, Long[]>();
-		
+
+
+
 		if (loadBalancePolicy.equals(Constants.LOAD_BALANCE_ACTIVE)){
 			this.loadBalancer = new ActiveVmLoadBalancer(this);
 		} else if (loadBalancePolicy.equals(Constants.LOAD_BALANCE_POLICY_RR)){
@@ -111,6 +113,7 @@ public class DatacenterController extends DatacenterBroker implements GeoLocatab
 		}
 		else if(loadBalancePolicy.equals(Constants.LOAD_BALANCE_NEW_ALGO))
         {
+
             this.loadBalancer = new NewAlgo(this);
         }
 	}

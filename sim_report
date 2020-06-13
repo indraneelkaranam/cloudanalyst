@@ -7,8 +7,8 @@
 Version: SimJava 2.0
 
 Simulation date:         June 13, 2020
-Simulation start time:   10:13:39 AM IST
-Simulation end time:     10:14:27 AM IST
+Simulation start time:   12:55:57 PM IST
+Simulation end time:     12:56:57 PM IST
 
 ############################################################
 #            Overall simulation run information            #
@@ -29,19 +29,19 @@ Output analysis method:  None
 
 - Service time
 
-Sample mean:          0.4993740027052361
-Sample variance:      0.08364596330326678
-Sample std deviation: 0.28921611867817254
-Maximum:              1.116188567818952
-Minimum:              0.004290154902264476
+Sample mean:          0.49947536041373325
+Sample variance:      0.08383245225267198
+Sample std deviation: 0.2895383433203139
+Maximum:              1.1119037204318545
+Minimum:              0.0049767676973715425
 
 - Overloading status : DC1-Broker-0
 
-Sample mean:          0.4993740027052361
-Sample variance:      0.08364596330326678
-Sample std deviation: 0.28921611867817254
-Maximum:              1.116188567818952
-Minimum:              0.004290154902264476
+Sample mean:          0.49947536041373325
+Sample variance:      0.08383245225267198
+Sample std deviation: 0.2895383433203139
+Maximum:              1.1119037204318545
+Minimum:              0.0049767676973715425
 
 - Overloading status : DC1-Broker-1
 
@@ -231,18 +231,18 @@ Minimum:              0.0
 
 - Service time
 
-Sample mean:          0.7421977069527134
-Sample variance:      0.16748916129344676
-Sample std deviation: 0.4092543967918326
-Maximum:              2.7871107789687812
+Sample mean:          0.7572652902371758
+Sample variance:      0.1787993485242259
+Sample std deviation: 0.4228467198929488
+Maximum:              2.777102103456855
 Minimum:              0.028781811939552426
 
 - Overloading status : DC2-Broker-0
 
-Sample mean:          0.7421977069527134
-Sample variance:      0.16748916129344676
-Sample std deviation: 0.4092543967918326
-Maximum:              2.7871107789687812
+Sample mean:          0.7572652902371758
+Sample variance:      0.1787993485242259
+Sample std deviation: 0.4228467198929488
+Maximum:              2.777102103456855
 Minimum:              0.028781811939552426
 
 - Overloading status : DC2-Broker-1
@@ -433,19 +433,19 @@ Minimum:              0.0
 
 - Service time
 
-Sample mean:          0.5038581374346413
-Sample variance:      0.08419700279627888
-Sample std deviation: 0.2901671980019087
-Maximum:              1.0449585577454172
-Minimum:              0.00295471481513232
+Sample mean:          0.5049796808580571
+Sample variance:      0.08414864114666389
+Sample std deviation: 0.2900838519233084
+Maximum:              1.0358438584410976
+Minimum:              0.002972613670863211
 
 - Overloading status : DC3-Broker-0
 
-Sample mean:          0.5038581374346413
-Sample variance:      0.08419700279627888
-Sample std deviation: 0.2901671980019087
-Maximum:              1.0449585577454172
-Minimum:              0.00295471481513232
+Sample mean:          0.5049796808580571
+Sample variance:      0.08414864114666389
+Sample std deviation: 0.2900838519233084
+Maximum:              1.0358438584410976
+Minimum:              0.002972613670863211
 
 - Overloading status : DC3-Broker-1
 
@@ -635,18 +635,18 @@ Minimum:              0.0
 
 - Service time
 
-Sample mean:          9.13253586940445
-Sample variance:      19.560283219275238
-Sample std deviation: 4.422700896429154
-Maximum:              16.129299388208892
+Sample mean:          9.142153547277953
+Sample variance:      19.22561107297007
+Sample std deviation: 4.384701936616681
+Maximum:              16.00018352549523
 Minimum:              0.04063820792362094
 
 - Overloading status : DC4-Broker-0
 
-Sample mean:          9.13253586940445
-Sample variance:      19.560283219275238
-Sample std deviation: 4.422700896429154
-Maximum:              16.129299388208892
+Sample mean:          9.142153547277953
+Sample variance:      19.22561107297007
+Sample std deviation: 4.384701936616681
+Maximum:              16.00018352549523
 Minimum:              0.04063820792362094
 
 - Overloading status : DC4-Broker-1
@@ -837,19 +837,19 @@ Minimum:              0.0
 
 - UB Response time
 
-Sample mean:          50.83925374929937
-Sample variance:      12.813172967490042
-Sample std deviation: 3.5795492687613675
+Sample mean:          50.84598299236852
+Sample variance:      12.843375068365297
+Sample std deviation: 3.5837654873561826
 Maximum:              66.01710970955901
-Minimum:              35.50367231713608
+Minimum:              35.587840729393065
 
 - Hourly Response Time-0
 
-Sample mean:          50.83925374929937
-Sample variance:      12.813172967490042
-Sample std deviation: 3.5795492687613675
+Sample mean:          50.84598299236852
+Sample variance:      12.843375068365297
+Sample std deviation: 3.5837654873561826
 Maximum:              66.01710970955901
-Minimum:              35.50367231713608
+Minimum:              35.587840729393065
 
 - Hourly Response Time-1
 
@@ -1039,19 +1039,19 @@ Minimum:              0.0
 
 - UB Response time
 
-Sample mean:          59.199780856390014
-Sample variance:      49.20264270596739
-Sample std deviation: 7.014459544823635
-Maximum:              81.3807769396808
-Minimum:              41.29523324244656
+Sample mean:          59.209833131899735
+Sample variance:      49.131531711332066
+Sample std deviation: 7.0093888258058605
+Maximum:              81.44196541048586
+Minimum:              41.381915115285665
 
 - Hourly Response Time-0
 
-Sample mean:          59.199780856390014
-Sample variance:      49.20264270596739
-Sample std deviation: 7.014459544823635
-Maximum:              81.3807769396808
-Minimum:              41.29523324244656
+Sample mean:          59.209833131899735
+Sample variance:      49.131531711332066
+Sample std deviation: 7.0093888258058605
+Maximum:              81.44196541048586
+Minimum:              41.381915115285665
 
 - Hourly Response Time-1
 

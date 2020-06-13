@@ -51,6 +51,10 @@ public class NewAlgo  extends VmLoadBalancer implements CloudSimEventListener  {
     double storage[] ;
     double sum[] ;
     int counter[];
+    double first[];
+    double second[];
+    int f[];
+    int s[];
     PP p[] ;
     int hEnd;
     int lEnd;
@@ -61,8 +65,10 @@ public class NewAlgo  extends VmLoadBalancer implements CloudSimEventListener  {
     int currVm = -1;
     int vmId = -1;
     int size;
+    int clusterCount = 0;
     public NewAlgo(DatacenterController dcb)
     {
+        System.out.println("Came to right algo");
         dcb.addCloudSimEventListener(this);
         this.vmStatesList = dcb.getVmStatesList();
         this.currentAllocationCounts = Collections.synchronizedMap(new HashMap<Integer, Integer>());
@@ -72,18 +78,63 @@ public class NewAlgo  extends VmLoadBalancer implements CloudSimEventListener  {
         storage = new double[vmStatesList.size()];
         sum = new double[vmStatesList.size()];
         p = new PP[vmStatesList.size()];
+        first = new double[vmStatesList.size()];
+        second = new double[vmStatesList.size()];
         counter = new int[vmStatesList.size()];
+        f = new int[vmStatesList.size()];
+        s = new int[vmStatesList.size()];
         for(int i=0;i<vmStatesList.size();i++) {
             storage[i] = 0;
             sum[i] = 0;
             counter[i] = 2;
+            first[i] = -1;
+            second[i] = -1;
+            f[i] = 0;
+            s[i] = 0;
         }
         size = vmStatesList.size();
+    }
+    public void divideClusters(double sum[])
+    {
+        int start = 0;
+        double prev = 0;
+        int flag = 0;
+        //System.out.println("Size is "+size);
+        for(int i=size-1;i>=0;i--)
+        {
+            if(start==0)
+            {
+                prev = sum[i];
+                start = 1;
+            }
+            else
+            {
+                System.out.println(sum[i]+" "+prev);
+                if((sum[i]-prev)*100<=3)
+                {
+                    flag = 1;
+                }
+                else
+                {
+                    flag = 0;
+                    clusterCount = clusterCount+1;
+               //     System.out.println("Incremented ");
+                }
+                prev = sum[i];
+            }
+        }
+        if(flag==1)
+            clusterCount++;
+        if(clusterCount==0)
+            clusterCount = 1;
+        if(clusterCount==1)
+            choice = 0;
+        System.out.println("Cluster count is "+clusterCount);
     }
 
     public void sortPowers()
     {
-        //System.out.println("came for sorting ");
+        System.out.println("came for sorting ");
         for(int i=0;i<vmStatesList.size();i++)
         {
             p[i] = new PP(i,sum[i]);
@@ -95,6 +146,7 @@ public class NewAlgo  extends VmLoadBalancer implements CloudSimEventListener  {
         for(int i=0;i<vmStatesList.size();i++)
         {
             System.out.print(p[i].getPower()+" ");
+            sum[i] = p[i].getPower();
         }
         System.out.println();
         int r = vmStatesList.size();
@@ -102,7 +154,8 @@ public class NewAlgo  extends VmLoadBalancer implements CloudSimEventListener  {
             choice = 0;
           //  System.out.println("choice is made 0");
         }
-
+        size = vmStatesList.size();
+        divideClusters(sum);
         int n =  vmStatesList.size();
         hEnd = vmStatesList.size()-1;
         lLimit = 0;
@@ -125,11 +178,13 @@ public class NewAlgo  extends VmLoadBalancer implements CloudSimEventListener  {
 
     public void check()
     {
-        int l = 0;
+        int fail = 0;
         for(int i=0;i<vmStatesList.size();i++)
-            if(counter[i]>0)
-                l = 1;
-            if(l==0) {
+        {
+            if(f[i]==0||s[i]==0)
+                fail = 1;
+        }
+            if(fail==0) {
                 flag = 1;
               //  System.out.println("Flag is MAde 1");
             }
@@ -141,8 +196,8 @@ public class NewAlgo  extends VmLoadBalancer implements CloudSimEventListener  {
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        //System.out.println("Request Received ");
 
+        //System.out.println("request arrived ");
         if(begin==0)
         {
             initialize();
@@ -315,6 +370,11 @@ public class NewAlgo  extends VmLoadBalancer implements CloudSimEventListener  {
             int vmId = (Integer) e.getParameter(Constants.PARAM_VM_ID);
             vmStatesList.put(vmId, VirtualMachineState.BUSY);
             storage[vmId] = GridSim.clock();
+            if(first[vmId]==-1)
+                first[vmId] = storage[vmId];
+            else if(second[vmId]==-1)
+                second[vmId] = storage[vmId];
+            //System.out.println("request assigned to  "+vmId+" "+storage[vmId]);
 //            Integer currCount = currentAllocationCounts.get(vmId);
 //            if (currCount == null){
 //                currCount = 1;
@@ -326,7 +386,16 @@ public class NewAlgo  extends VmLoadBalancer implements CloudSimEventListener  {
         } else if (e.getId() == CloudSimEvents.EVENT_VM_FINISHED_CLOUDLET){
             int vmId = (Integer) e.getParameter(Constants.PARAM_VM_ID);
             vmStatesList.put(vmId, VirtualMachineState.AVAILABLE);
-
+              if(f[vmId]==0)
+              {
+                  sum[vmId] += GridSim.clock() - first[vmId];
+                  f[vmId] = 1;
+              }
+              else if(s[vmId]==0)
+              {
+                  sum[vmId] += GridSim.clock() - second[vmId];
+                  s[vmId] = 1;
+              }
 //            Integer currCount = currentAllocationCounts.remove(vmId);
 //            if (currCount != null){
 //                currCount--;
@@ -337,11 +406,13 @@ public class NewAlgo  extends VmLoadBalancer implements CloudSimEventListener  {
 //                currCount = 0;
 //            else
 //                currCount++;
-           if(counter[vmId]>0) {
-               sum[vmId] += GridSim.clock() - storage[vmId];
-//                System.out.println("completed execution " + vmId + " " + sum[vmId]);
-                counter[vmId]--;
-            }
+//           if(counter[vmId]>0) {
+//               sum[vmId] += GridSim.clock() - storage[vmId];
+//               System.out.println("request deallocated "+vmId+" "+sum[vmId]);
+//
+////                System.out.println("completed execution " + vmId + " " + sum[vmId]);
+//                counter[vmId]--;
+//            }
         }
     }
 }
