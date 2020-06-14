@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6b2e5659-8664-465c-b8c0-4d870c915da5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/cloud_analyst/cloudsim/ext/datacenter/DatacenterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cloud_analyst/cloudsim/ext/datacenter/DatacenterController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/cloud_analyst/cloudsim/ext/datacenter/NewAlgo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/cloud_analyst/cloudsim/ext/datacenter/NewAlgo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sim_report" beforeDir="false" afterPath="$PROJECT_DIR$/sim_report" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cloudsim/ext/datacenter/DatacenterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cloudsim/ext/datacenter/DatacenterController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cloudsim/ext/datacenter/NewAlgo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cloudsim/ext/datacenter/NewAlgo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,22 +86,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1588732908783" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1592033140470">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1592136280873">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592033140470" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1592033140469">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592136280873" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1592136280873">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592033140469" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1592033140469">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592136280873" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1592136280872">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592033140469" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1592033140470">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592136280872" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1592136280873">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592033140470" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592136280873" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1592033112485">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -132,10 +130,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1591931545937" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1591256612069">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1592047443922">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1591256612069" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1592047443922" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
