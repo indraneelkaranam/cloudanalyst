@@ -42,13 +42,14 @@ import java.util.Set;
 public class DataCenter extends CloudSim {
 	
 	protected DatacenterCharacteristics resource_;
+	protected DatacenterCharacteristics resource__;
     protected String regionalGISName_;
-    
+    protected String Dc_name;
 	protected VMProvisioner vmprovisioner;
 	protected double lastProcessTime;
 	protected HashMap<Integer,Double> debts;
 	protected LinkedList<Storage> storageList;
-
+    static int use = 0;
 	/**
      * Allocates a new Datacenter object.
      *
@@ -73,7 +74,10 @@ public class DataCenter extends CloudSim {
      */
 	public DataCenter(String name, DatacenterCharacteristics resource, VMProvisioner vmprovisioner, LinkedList<Storage> storageList) throws Exception {
 		super(name);
+		Dc_name = name;
+		//System.out.println("constructor got "+name);
 		resource_ = resource;
+		resource__ = resource_;
 		this.vmprovisioner = vmprovisioner;
 		vmprovisioner.init(this.resource_.getMachineList());
 		this.lastProcessTime=0.0;
@@ -88,6 +92,18 @@ public class DataCenter extends CloudSim {
      * @pre $none
      * @post $none
      */
+    public String getDc_name()
+    {
+        return  Dc_name;
+    }
+    public DatacenterCharacteristics getResource_()
+    {
+        return resource__;
+    }
+    public long getOverallspeed()
+    {
+        return resource__.overallspeed;
+    }
     private void init() throws Exception {
         // If this resource doesn't have any PEs then no useful at all
         if (resource_.getNumPE() == 0) {
@@ -897,6 +913,9 @@ public class DataCenter extends CloudSim {
 			MachineList list = vmprovisioner.getResources();
 			double smallerTime = Double.MAX_VALUE;
 			//for each host...
+
+            use++;
+            //System.out.println("Updating Host "+list.size()+" "+use);
 			for(int i=0;i<list.size();i++){
 				Host host = (Host) list.get(i);
 				double time = host.updateVMsProcessing(GridSim.clock());//inform VMs to update processing

@@ -67,7 +67,7 @@ public class BestResponseTimeServiceBroker extends ServiceProximityServiceBroker
 		
 		//Check if there is another DC with an estimated response time less than 
 		// the closes DC
-		Map<String, Double[]> serviceLatencies = internetCharacteristics.getServiceLatencies();
+		Map<String, Double[]> serviceLatencies = internetCharacteristics.getServiceLatencies();  //last cloudlet processing time and its ending time for each dc
 		String quickestDc = null;
 		double currEstimatedResponseTime;
 		double leastEstimatedResponseTime = Double.MAX_VALUE;

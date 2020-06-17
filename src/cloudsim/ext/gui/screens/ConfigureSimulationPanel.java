@@ -436,6 +436,7 @@ public class ConfigureSimulationPanel extends JPanel
 				Constants.LOAD_BALANCE_POLICY_RR, 
 				Constants.LOAD_BALANCE_ACTIVE,
 				Constants.LOAD_BALANCE_THROTTLED,
+				Constants.LOAD_BALANCE_NEW_ALGO,
 		});
 		cmbLoadBalancingPolicy.setSelectedItem(simulation.getLoadBalancePolicy());
 		cmbLoadBalancingPolicy.setBounds(x, y, compW, compH);
@@ -1273,7 +1274,7 @@ public class ConfigureSimulationPanel extends JPanel
 		@Override
 		protected void setValueAtInternal(Object value, int row, int col) {
 			MachineUIElement mc = data.get(row);
-			
+
 			switch (col){
 			case 0:
 				//Nothing to do
@@ -1302,7 +1303,7 @@ public class ConfigureSimulationPanel extends JPanel
 		public Object getValueAt(int row, int col) {
 			MachineUIElement mc = data.get(row);
 			Object value = null;
-			
+			//System.out.println("get Value at Internal "+row+" "+col);
 			switch (col){
 			case 0:
 				value = row;

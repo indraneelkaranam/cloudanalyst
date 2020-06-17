@@ -30,7 +30,7 @@ abstract public class VmLoadBalancer {
 	 * @return id of the next available Virtual Machine to which the next task should be
 	 * 			allocated 
 	 */
-	abstract public int getNextAvailableVm();
+	abstract public int getNextAvailableVm(int peakTime);
 	
 	/**
 	 * Used internally to update VM allocation statistics. Should be called by all impelementing
@@ -39,7 +39,7 @@ abstract public class VmLoadBalancer {
 	 * @param currVm
 	 */
 	protected void allocatedVm(int currVm){
-		
+
 		Integer currCount = vmAllocationCounts.get(currVm);
 		if (currCount == null){
 			currCount = 0;
@@ -52,6 +52,7 @@ abstract public class VmLoadBalancer {
 	 * @return
 	 */
 	public Map<Integer, Integer> getVmAllocationCounts(){
+
 		return vmAllocationCounts;
 	}
 }

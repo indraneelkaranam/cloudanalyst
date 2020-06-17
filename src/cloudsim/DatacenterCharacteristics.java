@@ -29,7 +29,7 @@ public class DatacenterCharacteristics extends ResourceCharacteristics {
 	protected double costPerMem;
 	protected double costPerStorage;
 	protected double costPerBw;
-	
+	protected long overallspeed;
 	/**
      * Allocates a new DatacenterCharacteristics object.
      * If the time zone is invalid, then by default, it will be GMT+0.
@@ -52,22 +52,26 @@ public class DatacenterCharacteristics extends ResourceCharacteristics {
      * @pre costPerStorage >= 0
      * @post $none
      */
-	public DatacenterCharacteristics(String architecture, String OS,String VMM, MachineList machineList, double timeZone,double costPerSec, double costPerMem, double costPerStorage, double costPerBw) {
+	public DatacenterCharacteristics(String architecture, String OS,String VMM, MachineList machineList, double timeZone,double costPerSec, double costPerMem, double costPerStorage, double costPerBw,long overallspeed) {
 		super(architecture, OS, machineList, 1, timeZone, costPerSec);
 		this.vmm=VMM;
 		this.costPerMem=costPerMem;
 		this.costPerStorage=costPerStorage;
 		this.costPerBw=costPerBw;
+		this.overallspeed = overallspeed;
 	}
 
 	/**
 	 * Get the cost to use memory in this resource
 	 * @return the cost to use memory
 	 */
+
 	public double getCostPerMem() {
 		return costPerMem;
 	}
-	
+	public long getOverallspeed() {
+		return overallspeed;
+	}
 	/**
      * Sets cost to use memory
      * @param costPerMem  cost to use memory

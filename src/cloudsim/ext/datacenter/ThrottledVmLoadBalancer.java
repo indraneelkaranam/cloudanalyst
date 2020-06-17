@@ -7,6 +7,7 @@ import cloudsim.ext.Constants;
 import cloudsim.ext.event.CloudSimEvent;
 import cloudsim.ext.event.CloudSimEventListener;
 import cloudsim.ext.event.CloudSimEvents;
+import gridsim.GridSim;
 
 /**
  * This class implements {@link VmLoadBalancer} as a Throttled load balancer. Each VM is
@@ -25,7 +26,7 @@ import cloudsim.ext.event.CloudSimEvents;
 public class ThrottledVmLoadBalancer extends VmLoadBalancer implements CloudSimEventListener {
 	
 	private Map<Integer, VirtualMachineState> vmStatesList;
-	
+
 	/** 
 	 * Constructor
 	 * 
@@ -34,6 +35,8 @@ public class ThrottledVmLoadBalancer extends VmLoadBalancer implements CloudSimE
 	public ThrottledVmLoadBalancer(DatacenterController dcb){
 		this.vmStatesList = dcb.getVmStatesList();
 		dcb.addCloudSimEventListener(this);
+
+
 	}
 
 	/**
@@ -41,9 +44,10 @@ public class ThrottledVmLoadBalancer extends VmLoadBalancer implements CloudSimE
 	 * 			{@link DatacenterController}
 	 */
 	@Override
-	public int getNextAvailableVm(){
+	public int getNextAvailableVm(int peakTime){
 		int vmId = -1;
-		
+
+
 		if (vmStatesList.size() > 0){
 			int temp;
 			for (Iterator<Integer> itr = vmStatesList.keySet().iterator(); itr.hasNext();){
@@ -55,7 +59,7 @@ public class ThrottledVmLoadBalancer extends VmLoadBalancer implements CloudSimE
 				}
 			}
 		}
-		
+
 		allocatedVm(vmId);
 		
 		return vmId;
@@ -66,6 +70,7 @@ public class ThrottledVmLoadBalancer extends VmLoadBalancer implements CloudSimE
 		if (e.getId() == CloudSimEvents.EVENT_CLOUDLET_ALLOCATED_TO_VM){
 			int vmId = (Integer) e.getParameter(Constants.PARAM_VM_ID);
 			vmStatesList.put(vmId, VirtualMachineState.BUSY);
+
 		} else if (e.getId() == CloudSimEvents.EVENT_VM_FINISHED_CLOUDLET){
 			int vmId = (Integer) e.getParameter(Constants.PARAM_VM_ID);
 			vmStatesList.put(vmId, VirtualMachineState.AVAILABLE);

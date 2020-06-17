@@ -46,6 +46,7 @@ public class UserBase extends CloudSim implements GeoLocatable {
 	private Sim_stat stat;
 	static int use = 0;
 	static int Ctime = 0;
+	static int peakTime = 0;
 	/** 
 	 * Holds the id's of the requests that have been sent out, along with the request time, until
 	 * the responses are received by the {@link ResponseHandler}
@@ -200,8 +201,10 @@ public class UserBase extends CloudSim implements GeoLocatable {
 		Ctime = Ctime%24;
 		if ((Ctime >= peakHours[0]) && (Ctime < peakHours[1])){
 		//	System.out.println("Peak hours Time");
+			peakTime = 1;
 			avgUsers = peakAvgUsers;
 		} else {
+			peakTime = 0;
 			avgUsers = offPeakAvgUsers;
 		}
 		int temp = (int) (avgUsers * userCountDistribution.sample() / STANDARD_POISSON_DIST_MEAN);
@@ -213,6 +216,10 @@ public class UserBase extends CloudSim implements GeoLocatable {
 	public static int CurrentTime()
 	{
 		return Ctime;
+	}
+	public static int getPeakStatus()
+	{
+		return peakTime;
 	}
 
 	public int getRegion() {
