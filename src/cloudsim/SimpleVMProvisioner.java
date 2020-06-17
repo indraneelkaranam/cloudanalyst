@@ -209,7 +209,7 @@ public class SimpleVMProvisioner extends VMProvisioner {
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 
-			/*	if(highTurn==1)
+				/*if(highTurn==1)
 				{
 					idx = high[highPos].getIndex();
 					highPos--;
