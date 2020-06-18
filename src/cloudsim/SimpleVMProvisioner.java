@@ -209,7 +209,7 @@ public class SimpleVMProvisioner extends VMProvisioner {
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 
-				/*if(highTurn==1)
+				if(highTurn==1)
 				{
 					idx = high[highPos].getIndex();
 					highPos--;
@@ -233,7 +233,7 @@ public class SimpleVMProvisioner extends VMProvisioner {
 						lowTurn = 0;
 					}
 					System.out.print("Assigned Lower one "+idx);
-				}*/
+				}
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////
@@ -254,13 +254,13 @@ public class SimpleVMProvisioner extends VMProvisioner {
 ///////////////////////////////////////////////////////////////////////////////////////////
 
 				//we want the host with less pes in use
-			   for(int i=0;i<freePEsTemp.length;i++){
+			   /*for(int i=0;i<freePEsTemp.length;i++){
 					if(freePEsTemp[i]>moreFree){
 
 						moreFree=freePEsTemp[i];
 						idx=i;
 					}
-				}
+				}*/
 
 				System.out.println("Returning idx  "+idx);
 				Host host = (Host)resources.get(idx);

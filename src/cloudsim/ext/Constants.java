@@ -79,6 +79,7 @@ public interface Constants {
 	final String TOTAL_COST = "Total Cost";
 
 	final String BROKER_POLICY_PROXIMITY = "Closest Data Center";
+	final String BROKER_POLICY_ENHANCED = "Enhanced Service Proximity";
 	final String BROKER_POLICY_OPTIMAL_RESPONSE = "Optimise Response Time";
 	final String BROKER_POLICY_DYNAMIC = "Reconfigure Dynamically with Load";
 

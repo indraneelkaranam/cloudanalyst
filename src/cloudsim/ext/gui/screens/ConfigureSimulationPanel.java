@@ -296,7 +296,8 @@ public class ConfigureSimulationPanel extends JPanel
 		compW = 180;
 		cmbServiceBroker = new JComboBox(new String[]{Constants.BROKER_POLICY_PROXIMITY, 
 													  Constants.BROKER_POLICY_OPTIMAL_RESPONSE,
-													  Constants.BROKER_POLICY_DYNAMIC});
+													  Constants.BROKER_POLICY_DYNAMIC,
+                                                      Constants.BROKER_POLICY_ENHANCED});
 		cmbServiceBroker.setSelectedItem(simulation.getServiceBrokerPolicy());
 		cmbServiceBroker.setBounds(x, y, compW, compH);
 		mainTab.add(cmbServiceBroker);

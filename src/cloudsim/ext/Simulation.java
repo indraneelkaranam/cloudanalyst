@@ -1,5 +1,6 @@
 package cloudsim.ext;
 
+import cloudsim.ext.servicebroker.*;
 import eduni.simjava.Sim_stat;
 import eduni.simjava.Sim_system;
 import gridsim.GridSim;
@@ -46,10 +47,6 @@ import cloudsim.ext.gui.MachineUIElement;
 import cloudsim.ext.gui.UserBaseUIElement;
 import cloudsim.ext.gui.VmAllocationUIElement;
 import cloudsim.ext.gui.utils.SimMeasure;
-import cloudsim.ext.servicebroker.BestResponseTimeServiceBroker;
-import cloudsim.ext.servicebroker.CloudAppServiceBroker;
-import cloudsim.ext.servicebroker.DynamicServiceBroker;
-import cloudsim.ext.servicebroker.ServiceProximityServiceBroker;
 import cloudsim.ext.stat.HourlyEventCounter;
 import cloudsim.ext.util.InternetEntitityRegistry;
 import cloudsim.ext.util.ObservableList;
@@ -212,7 +209,11 @@ public class Simulation extends BaseCloudSimObservable implements Constants {
 			serviceBroker = new ServiceProximityServiceBroker();
 		} else if (serviceBrokerPolicy.equals(Constants.BROKER_POLICY_DYNAMIC)){
 			serviceBroker = new DynamicServiceBroker(dcbs);
-		} else {
+		}
+		else if(serviceBrokerPolicy.equals(Constants.BROKER_POLICY_ENHANCED)){
+			serviceBroker =	new EnhancedServiceProximity();
+		}
+		else {
 			serviceBroker = new BestResponseTimeServiceBroker();
 		}
 		internet.addServiceBroker(DEFAULT_APP_ID, serviceBroker); 				
